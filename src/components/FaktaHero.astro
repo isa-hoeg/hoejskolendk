@@ -1,0 +1,61 @@
+---
+import Heading from '../components/Heading.astro';
+import Text from '../components/Text.astro';
+
+--- 
+
+<section class="bg-[var(--color-secondary)] py-6 rounded-xl">
+  <div class="max-w-4xl mx-auto flex flex-col sm:flex-row justify-between items-center text-center px-4">
+    
+    <div class="flex-1">
+      <Heading
+        htmlheading="h3"
+        size="h3"
+        weight="bold"
+        font="overskrifter"
+        color="color-text"
+      >
+        4,6 ⭐️
+      </Heading>
+      <Text teksttype="brødtekst_dark">
+        I overordnet score på Trustpilot
+      </Text>
+    </div>
+
+    <div class="hidden sm:block w-px h-32 bg-[var(--color-text)] mx-6"></div>
+
+    
+    <div class="flex-1">
+      <Heading
+        htmlheading="h3"
+        size="h3"
+        weight="bold"
+        font="overskrifter"
+        color="color-text"
+      >
+        +500
+      </Heading>
+      <Text teksttype="brødtekst_dark" >
+        Glade og skønne elever årligt
+      </Text>
+    </div>
+
+  
+    <div class="hidden sm:block w-px h-32 bg-[var(--color-text)] mx-6"></div>
+
+    <div class="flex-1">
+      <Heading
+        htmlheading="h3"
+        size="h3"
+        weight="bold"
+        font="overskrifter"
+        color="color-text"
+      >
+        +15
+      </Heading>
+      <Text teksttype="brødtekst_dark">
+        Års erfaring med højskole i udlandet
+      </Text>
+    </div>
+  </div>
+</section>
