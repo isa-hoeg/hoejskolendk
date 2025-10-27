@@ -14,25 +14,20 @@ import Cards from "../components/Cards.astro";
 import SoMe from "../components/SoMe.astro";
 import Forskel from "../components/Forskel.astro";
 import Citater from "../components/Citater.astro";
+import Accordion from "../components/Accordion.astro";
 
 ---
 <MainLayout title="Titel">
 	
 	<Hero />
 	<main class="container mx-auto p-4">
-		<FaktaHero />
-		<Heading htmlheading="h2" size="h2_dark" font="overskrifter">Om os</Heading>
-		<Udvalgte />
-		<Infomoede />
-		<Heading htmlheading="h2" size="h2_dark" font="overskrifter">Alle rejser</Heading>
-		<Cards />
-		<Heading htmlheading="h2" size="h2_light" font="overskrifter">Fölg med på rejsen</Heading>
+		<FaktaSingle />
+		<Heading htmlheading="h2" size="h2_dark" font="overskrifter">Program</Heading>
+		<Program />
+        <Heading htmlheading="h2" size="h2_dark" font="overskrifter">Praktisk info</Heading>
+        <Accordion />
+        <Heading htmlheading="h2" size="h2_dark" font="overskrifter">Fölg med på rejsen</Heading>
 		<SoMe />
-		<Heading htmlheading="h2" size="h2_dark" font="overskrifter">Vi gör forskel</Heading>
-		<Text teksttype="brødtekst_dark">Vi tror på, at alle kan gøre en forskel - selv en højskole fra Danmark. Vi støtter derfor Verdens Skoves arbejde med bevarelse og bæredygtig brug af verdens skove. </Text>
-		<Forskel />
-		<Heading htmlheading="h2" size="h2_dark" font="overskrifter">Det siger andre?</Heading>
-		<Citater />
 	</main>
 	
 </MainLayout>
