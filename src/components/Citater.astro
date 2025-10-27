@@ -1,0 +1,64 @@
+---
+import Heading from "./Heading.astro";
+import Text from "./Text.astro";
+---
+
+<section class="w-full py-12 mb-12">
+<div class="w-full mx-0 flex flex-col sm:flex-row justify-between items-stretch text-left gap-6">
+    
+    <!-- Citat 1 -->
+    <div class="flex-1 bg-[var(--color-accent-green)] rounded-lg shadow-md p-6 flex flex-col justify-between items-center text-center">
+       <Heading
+        htmlheading="h4"
+        size="h4_light"
+        weight="bold"
+        font="overskrifter"
+        color="color-text"
+      >
+        "Den bedste oplevelse med venner for livet."
+      </Heading>
+      
+      <div class="flex flex-row items-center gap-3 mt-8">
+    <img src="/img/agnes.webp" alt="Anna" class="w-12 h-12 rounded-full mb-2 object-cover" />
+    <Text teksttype="brødtekst_light">Agnes, 24 år</Text>
+  </div>
+    </div>
+
+    <!-- Citat 2 -->
+  <div class="flex-1 bg-[var(--color-accent-green)] rounded-lg shadow-md p-6 flex flex-col justify-between items-center text-center">
+       <Heading
+        htmlheading="h4"
+        size="h4_light"
+        weight="bold"
+        font="overskrifter"
+        color="color-text"
+      >
+        "Jeg har fået venner og oplevelser for livet."
+      </Heading>
+      
+      <div class="flex flex-row items-center gap-3 mt-8">
+    <img src="/img/cecilia.webp" alt="Cecilia" class="w-12 h-12 rounded-full mb-2 object-cover" />
+    <Text teksttype="brødtekst_light">Cecilia, 21 år</Text>
+  </div>
+    </div>
+
+    <!-- Citat 3 -->
+   <div class="flex-1 bg-[var(--color-accent-green)] rounded-lg shadow-md p-6 flex flex-col justify-between items-center text-center">
+       <Heading
+        htmlheading="h4"
+        size="h4_light"
+        weight="bold"
+        font="overskrifter"
+        color="color-text"
+      >
+        "Jeg kan varmt anbefale at tage på eventyr!"
+      </Heading>
+      
+      <div class="flex flex-row items-center gap-3 mt-8">
+    <img src="/img/tobias.webp" alt="Tobias" class="w-12 h-12 rounded-full mb-2 object-cover" />
+    <Text teksttype="brødtekst_light">Tobias, 23 år</Text>
+  </div>
+    </div>
+
+  </div>
+</section>
