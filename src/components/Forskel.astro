@@ -1,0 +1,20 @@
+---
+import Heading from '../components/Heading.astro';
+import Text from '../components/Text.astro';
+import "../styles/tailwind.css";
+import Button from './Button.astro';
+---
+<div class="bg-cover bg-center rounded-xl w-full h-84 my-20 relative" style="background-image: url('/img/forskel_bg.webp')">
+  <div class="flex justify-between items-center h-full py-15 px-20">
+    <Heading htmlheading="h3" size="h3_light" font="overskrifter" stylingclasses="text-center text-[var(--color-secondary)] px-10">
+      106.785 m² fredet regnskov
+    </Heading>
+
+    <!-- Lodret streg -->
+    <div class="border-l-4 border-[var(--color-secondary)] h-full"></div>
+
+    <Heading htmlheading="h3" size="h3_light" font="overskrifter" stylingclasses="text-center text-[var(--color-secondary)] px-10">
+      50 træer plantet pr. elev
+    </Heading>
+  </div>
+</div>
