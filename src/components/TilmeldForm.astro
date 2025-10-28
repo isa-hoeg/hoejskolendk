@@ -1,0 +1,311 @@
+---
+import Heading from "./Heading.astro";
+import Text from "./Text.astro";
+import "../styles/tailwind.css";
+---
+
+<div class="flex flex-col items-center mx-auto my-20">
+
+  <!-- STEP LABELS -->
+  <div id="step-labels" class="flex items-center gap-4 mb-20">
+    <p id="label-step-1" class="text-center border bg-[var(--color-secondary)] px-8 py-3 rounded-full text-xl font-display">Vælg ophold</p>
+    <p id="label-step-2" class="text-center border bg-[var(--color-primary)] px-8 py-3 rounded-full text-xl font-display">Personlige oplysninger</p>
+    <p id="label-step-3" class="text-center border bg-[var(--color-primary)] px-8 py-3 rounded-full text-xl font-display">Kontakt</p>
+    <p id="label-step-4" class="text-center border bg-[var(--color-primary)] px-8 py-3 rounded-full text-xl font-display">Samtykke</p>
+  </div>
+
+  <!-- STEP 1: Vælg ophold -->
+  <div id="step1" class="flex flex-col items-center mx-auto my-10">
+    <!-- Dropdown: Vælg destination -->
+    <div id="destination-toggle" class="flex items-center justify-between gap-40 bg-[var(--color-accent-green)] px-6 py-6 rounded-xl max-w-xl w-full cursor-pointer mb-2">
+      <p class="text-xl text-[var(--color-secondary)] font-display">Vælg ønsket destination</p>
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+        fill="var(--color-secondary)" stroke="var(--color-accent-orange)" stroke-width="2" stroke-linecap="round"
+        stroke-linejoin="round" class="lucide lucide-circle-arrow-down">
+        <circle cx="12" cy="12" r="10"/>
+        <path d="M12 8v8"/>
+        <path d="m8 12 4 4 4-4"/>
+      </svg>
+    </div>
+
+    <div id="destination-menu" class="max-w-xl w-full bg-[var(--color-secondary)] rounded-xl shadow-md p-4 mb-8 hidden overflow-hidden transition-all duration-300">
+      <ul class="space-y-2">
+        <li class="hover:bg-gray-100 hover:text-[var(--color-accent-orange)] p-3 rounded cursor-pointer border border-[var(--color-text)] hover:border-[var(--color-accent-orange)] font-display">Maldiverne, Sri Lanka, Bali, Gili Islands, Japan og Australien</li>
+        <li class="hover:bg-gray-100 hover:text-[var(--color-accent-orange)] p-3 rounded cursor-pointer border border-[var(--color-text)] hover:border-[var(--color-accent-orange)] font-display">Australien, New Zealand, Vietnam, Bali, Gili Islands & Lombok</li>
+        <li class="hover:bg-gray-100 hover:text-[var(--color-accent-orange)] p-3 rounded cursor-pointer border border-[var(--color-text)] hover:border-[var(--color-accent-orange)] font-display">Brasilien, Colombia, Costa Rica & Mexico</li>
+        <li class="hover:bg-gray-100 hover:text-[var(--color-accent-orange)] p-3 rounded cursor-pointer border border-[var(--color-text)] hover:border-[var(--color-accent-orange)] font-display">Indien, Nepal, Thailand, Vietnam & Sri Lanka</li>
+        <li class="hover:bg-gray-100 hover:text-[var(--color-accent-orange)] p-3 rounded cursor-pointer border border-[var(--color-text)] hover:border-[var(--color-accent-orange)] font-display">Hawaii, Australien, Japan, Bali & Gili Islands</li>
+        <li class="hover:bg-gray-100 hover:text-[var(--color-accent-orange)] p-3 rounded cursor-pointer border border-[var(--color-text)] hover:border-[var(--color-accent-orange)] font-display">Maldiverne, Sri Lanka, Bali & Gili Islands</li>
+        <li class="hover:bg-gray-100 hover:text-[var(--color-accent-orange)] p-3 rounded cursor-pointer border border-[var(--color-text)] hover:border-[var(--color-accent-orange)] font-display">Brasilien, Bolivia, Colombia, Ecuador, Peru & Argentina</li>
+        <li class="hover:bg-gray-100 hover:text-[var(--color-accent-orange)] p-3 rounded cursor-pointer border border-[var(--color-text)] hover:border-[var(--color-accent-orange)] font-display">Australien, Japan, Bali & Gili Islands</li>
+      </ul>
+    </div>
+
+    <!-- Dropdown: Vælg dato -->
+    <div id="date-toggle" class="flex items-center justify-between bg-[var(--color-accent-green)] px-6 py-6 rounded-xl max-w-xl w-full cursor-pointer mb-2">
+      <p class="text-xl text-[var(--color-secondary)] font-display">Vælg dato</p>
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+        fill="var(--color-secondary)" stroke="var(--color-accent-orange)" stroke-width="2" stroke-linecap="round"
+        stroke-linejoin="round" class="lucide lucide-circle-arrow-down">
+        <circle cx="12" cy="12" r="10"/>
+        <path d="M12 8v8"/>
+        <path d="m8 12 4 4 4-4"/>
+      </svg>
+    </div>
+
+    <div id="date-menu" class="max-w-xl w-full bg-[var(--color-secondary)] rounded-xl shadow-md p-4 hidden overflow-hidden transition-all duration-300">
+      <ul class="space-y-2">
+        <li class="hover:bg-gray-100 hover:text-[var(--color-accent-orange)] p-3 rounded cursor-pointer border border-[var(--color-text)] hover:border-[var(--color-accent-orange)] font-display">1. jan - 31. mar</li>
+        <li class="hover:bg-gray-100 hover:text-[var(--color-accent-orange)] p-3 rounded cursor-pointer border border-[var(--color-text)] hover:border-[var(--color-accent-orange)] font-display">1. apr - 30. jun</li>
+        <li class="hover:bg-gray-100 hover:text-[var(--color-accent-orange)] p-3 rounded cursor-pointer border border-[var(--color-text)] hover:border-[var(--color-accent-orange)] font-display">1. jul - 30. sep</li>
+        <li class="hover:bg-gray-100 hover:text-[var(--color-accent-orange)] p-3 rounded cursor-pointer border border-[var(--color-text)] hover:border-[var(--color-accent-orange)] font-display">1. okt - 31. dec</li>
+      </ul>
+    </div>
+
+    <div class="max-w-xl mx-auto flex justify-end mt-4">
+      <button id="next-step1" class="bg-[var(--color-secondary)] hover:bg-[var(--color-accent-orange)] text-[var(--color-text)] hover:text-[var(--color-secondary)] px-6 py-3 rounded-full shadow-lg transition-colors duration-200 font-display">
+        Næste
+      </button>
+    </div>
+  </div>
+
+  <!-- STEP 2: Personlige oplysninger -->
+  <div id="step2" class="flex flex-col items-center mx-auto my-20 hidden">
+    <div class="max-w-xl w-full flex flex-col gap-4">
+      <div class="grid grid-cols-2 gap-5">
+        <div>
+          <label for="fornavn" class="block text-[var(--color-text)] font-display">Fornavn & mellemnavn<span class="text-[var(--color-accent-orange)]">*</span></label>
+          <p class="text-[10px] text-gray-500 font-serif">Præcis som det står i dit pas</p>
+          <input type="text" id="fornavn" name="fornavn" placeholder="Lars Peter" class="mt-1 w-full rounded-xl px-3 py-2 bg-[var(--color-accent-green)] text-[var(--color-secondary)] focus:outline-none placeholder-[var(--color-secondary)]">
+        </div>
+        <div>
+          <label for="efternavn" class="block text-[var(--color-text)] font-display">Efternavn<span class="text-[var(--color-accent-orange)]">*</span></label>
+          <p class="text-[10px] text-gray-500 font-serif">Præcis som det står i dit pas</p>
+          <input type="text" id="efternavn" name="efternavn" placeholder="Hansen" class="mt-1 w-full rounded-xl px-3 py-2 bg-[var(--color-accent-green)] text-[var(--color-secondary)] focus:outline-none placeholder-[var(--color-secondary)]">
+        </div>
+        <div>
+          <label for="adresse" class="block text-[var(--color-text)] font-display">Adresse<span class="text-[var(--color-accent-orange)]">*</span></label>
+          <input type="text" id="adresse" name="adresse" placeholder="Guldbergsgade 40" class="mt-1 w-full rounded-xl px-3 py-2 bg-[var(--color-accent-green)] text-[var(--color-secondary)] focus:outline-none placeholder-[var(--color-secondary)]">
+        </div>
+        <div>
+          <label for="postnummer" class="block text-[var(--color-text)] font-display">Postnummer<span class="text-[var(--color-accent-orange)]">*</span></label>
+          <input type="text" id="postnummer" name="postnummer" placeholder="2300" class="mt-1 w-full rounded-xl px-3 py-2 bg-[var(--color-accent-green)] text-[var(--color-secondary)] focus:outline-none placeholder-[var(--color-secondary)]">
+        </div>
+        <div>
+          <label for="by" class="block text-[var(--color-text)] font-display">By<span class="text-[var(--color-accent-orange)]">*</span></label>
+          <input type="text" id="by" name="by" placeholder="København" class="mt-1 w-full rounded-xl px-3 py-2 bg-[var(--color-accent-green)] text-[var(--color-secondary)] focus:outline-none placeholder-[var(--color-secondary)]">
+        </div>
+        <div>
+          <label for="foeds" class="block text-[var(--color-text)] font-display">Fødselsdato<span class="text-[var(--color-accent-orange)]">*</span></label>
+          <input type="text" id="foeds" name="foeds" placeholder="DD/MM/ÅÅÅÅ" class="mt-1 w-full rounded-xl px-3 py-2 bg-[var(--color-accent-green)] text-[var(--color-secondary)] focus:outline-none placeholder-[var(--color-secondary)]">
+        </div>
+        <div class="col-span-2">
+          <label class="block text-[var(--color-text)] font-display">Køn <span class="text-[var(--color-accent-orange)]">*</span></label>
+          <p class="text-[10px] text-gray-500 font-serif">Præcis som det står i dit pas</p>
+          <div class="flex gap-4 mt-2">
+            <label class="flex items-center gap-1 text-[var(--color-text)]">
+              <input type="radio" name="koen" value="kvinde" class="accent-[var(--color-accent-orange)]" checked>
+              Kvinde
+            </label>
+            <label class="flex items-center gap-1 text-[var(--color-text)]">
+              <input type="radio" name="koen" value="mand" class="accent-[var(--color-accent-orange)]">
+              Mand
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="max-w-xl mx-auto flex justify-end gap-8 mt-4">
+      <button id="back-step2" class="bg-[var(--color-secondary)] hover:bg-[var(--color-accent-orange)] text-[var(--color-text)] hover:text-[var(--color-secondary)] px-6 py-3 rounded-full transition-colors duration-200 font-display">
+        Tilbage
+      </button>
+      <button id="next-step2" class="bg-[var(--color-secondary)] hover:bg-[var(--color-accent-orange)] text-[var(--color-text)] hover:text-[var(--color-secondary)] px-6 py-3 rounded-full transition-colors duration-200 font-display">
+        Næste
+      </button>
+    </div>
+  </div>
+
+  <!-- STEP 3: Kontakt -->
+  <div id="step3" class="flex flex-col items-center mx-auto my-20 hidden">
+    <div class="max-w-xl w-full flex flex-col gap-4">
+      <div class="grid grid-cols-2 gap-5">
+        <div>
+          <label for="tlf" class="block text-[var(--color-text)] font-display">Telefonnummer<span class="text-[var(--color-accent-orange)]">*</span></label>
+          <input type="text" id="tlf" name="tlf" placeholder="+45" class="mt-1 w-full rounded-xl px-3 py-2 bg-[var(--color-accent-green)] text-[var(--color-secondary)] focus:outline-none placeholder-[var(--color-secondary)]">
+        </div>
+        <div>
+          <label for="email" class="block text-[var(--color-text)] font-display">E-mail<span class="text-[var(--color-accent-orange)]">*</span></label>
+          <input type="text" id="email" name="email" placeholder="Larspeter@gmail.com" class="mt-1 w-full rounded-xl px-3 py-2 bg-[var(--color-accent-green)] text-[var(--color-secondary)] focus:outline-none placeholder-[var(--color-secondary)]">
+        </div>
+      </div>
+
+      <!-- Dropdown: Hvor hørte du om højskolen første gang? -->
+      <div class="relative max-w-xl mx-auto">
+        <label for="heard-about" class="block text-[var(--color-text)] font-display mb-2">Hvor hørte du om højskolen første gang?<span class="text-[var(--color-accent-orange)]">*</span></label>
+        <button type="button" id="dropdownButton" class="w-full flex justify-between items-center bg-[var(--color-accent-green)] text-[var(--color-secondary)] px-4 py-3 rounded-xl cursor-pointer">
+          Vælg en eller flere muligheder
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[var(--color-secondary)]" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.25a.75.75 0 01-1.06 0L5.21 8.29a.75.75 0 01.02-1.08z" clip-rule="evenodd" />
+          </svg>
+        </button>
+        <div id="dropdownMenu" class="hidden absolute w-full mt-2 bg-[var(--color-accent-green)] rounded-xl shadow-md p-4 z-10">
+          <label class="flex items-center space-x-2 text-[var(--color-secondary)] font-serif">
+            <input type="checkbox" name="heard_about" value="facebook" class="accent-[var(--color-accent-orange)]">
+            <span>Facebook</span>
+          </label>
+          <label class="flex items-center space-x-2 text-[var(--color-secondary)] font-serif">
+            <input type="checkbox" name="heard_about" value="instagram" class="accent-[var(--color-accent-orange)]">
+            <span>Instagram</span>
+          </label>
+          <label class="flex items-center space-x-2 text-[var(--color-secondary)] font-serif">
+            <input type="checkbox" name="heard_about" value="venner" class="accent-[var(--color-accent-orange)]">
+            <span>Venner/familie</span>
+          </label>
+          <label class="flex items-center space-x-2 text-[var(--color-secondary)] font-serif">
+            <input type="checkbox" name="heard_about" value="reklame" class="accent-[var(--color-accent-orange)]">
+            <span>Annonce</span>
+          </label>
+          <label class="flex items-center space-x-2 text-[var(--color-secondary)] font-serif">
+            <input type="checkbox" name="heard_about" value="tidligere-elev" class="accent-[var(--color-accent-orange)]">
+            <span>Tidligere elev</span>
+          </label>
+        </div>
+      </div>
+
+      <div>
+        <label for="bemærkninger" class="block text-[var(--color-text)] font-display">Bemærkninger<span class="text-[var(--color-accent-orange)]">*</span></label>
+        <input type="text" id="bemærkninger" name="bemærkninger" placeholder="" class="mt-1 w-full rounded-xl px-3 py-10 bg-[var(--color-accent-green)] text-[var(--color-secondary)] focus:outline-none placeholder-[var(--color-secondary)]">
+      </div>
+    </div>
+
+    <div class="max-w-xl mx-auto flex justify-end gap-4 mt-4">
+      <button id="back-step3" class="bg-[var(--color-secondary)] hover:bg-[var(--color-accent-orange)] text-[var(--color-text)] hover:text-[var(--color-secondary)] px-6 py-3 rounded-full transition-colors duration-200 font-display">
+        Tilbage
+      </button>
+      <button id="next-step3" class="bg-[var(--color-secondary)] hover:bg-[var(--color-accent-orange)] text-[var(--color-text)] hover:text-[var(--color-secondary)] px-6 py-3 rounded-full transition-colors duration-200 font-display">
+        Næste
+      </button>
+    </div>
+  </div>
+
+  <!-- STEP 4: Samtykke -->
+  <div id="step4" class="flex flex-col items-center mx-auto my-20 hidden">
+    <div class="max-w-xl w-full flex flex-col gap-4">
+      <label class="flex items-center gap-2">
+        <input type="checkbox" id="accept" name="accept" class="w-5 h-5 rounded-full">
+        <span class="text-[var(--color-text)] font-display">Jeg har læst jeres privatlivspolitik og generelle bestemmelser og er indforstået med begge</span>
+      </label>
+      <p class="font-serif text-[14px] text-[var(--color-text)]">Ved at klikke på tilmeld nedenfor, giver du samtykke til at, HÖJSKOLENDK må gemme og behandle personlige oplysninger, du har angivet herover, for at tilmelde dig dit ophold.</p>
+    </div>
+    <div class="max-w-xl mx-auto flex justify-end gap-4 mt-4">
+      <button id="back-step4" class="bg-[var(--color-secondary)] hover:bg-[var(--color-accent-orange)] text-[var(--color-text)] hover:text-[var(--color-secondary)] px-6 py-3 rounded-full transition-colors duration-200 font-display">
+        Tilbage
+      </button>
+      <button id="submit" class="bg-[var(--color-secondary)] hover:bg-[var(--color-accent-orange)] text-[var(--color-text)] hover:text-[var(--color-secondary)] px-6 py-3 rounded-full transition-colors duration-200 font-display">
+        Tilmeld
+      </button>
+    </div>
+  </div>
+  <!-- STEP 5: Bekræftelse -->
+<div id="step5" class="flex flex-col items-center mx-auto my-20 hidden bg-[var(--color-accent-green)] p-15 rounded-xl">
+  <div class="max-w-xl w-full flex flex-col gap-4 text-center">
+    <h2 class="text-3xl font-display text-[var(--color-secondary)]">Du er nu tilmeldt!</h2>
+    <p class="font-serif text-xl text-[var(--color-secondary)] mt-4">
+      Efter du har tilmeldt dig sender vi en e-mail til dig med bekræftelse på din tilmelding. 
+      I den mail finder du også et infobrev og en faktura på depositum på 3.000 DKK – 
+      når det er betalt, er du sikret din plads på holdet.
+    </p>
+  </div>
+</div>
+
+
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  // Dropdown: destination
+  const destinationToggle = document.getElementById("destination-toggle");
+  const destinationMenu = document.getElementById("destination-menu");
+  destinationToggle?.addEventListener("click", () => destinationMenu.classList.toggle("hidden"));
+  destinationMenu?.querySelectorAll("li").forEach(item => {
+    item.addEventListener("click", () => {
+      destinationToggle.querySelector("p").textContent = item.textContent;
+      destinationMenu.classList.add("hidden");
+    });
+  });
+
+  // Dropdown: date
+  const dateToggle = document.getElementById("date-toggle");
+  const dateMenu = document.getElementById("date-menu");
+  dateToggle?.addEventListener("click", () => dateMenu.classList.toggle("hidden"));
+  dateMenu?.querySelectorAll("li").forEach(item => {
+    item.addEventListener("click", () => {
+      dateToggle.querySelector("p").textContent = item.textContent;
+      dateMenu.classList.add("hidden");
+    });
+  });
+
+  // Dropdown: Hvor hørte du om højskolen første gang
+  const dropdownButton = document.getElementById("dropdownButton");
+  const dropdownMenu = document.getElementById("dropdownMenu");
+  dropdownButton?.addEventListener("click", (e) => {
+    e.stopPropagation();
+    dropdownMenu.classList.toggle("hidden");
+  });
+  document.addEventListener("click", (event) => {
+    const path = event.composedPath ? event.composedPath() : [];
+    if (!path.includes(dropdownButton) && !path.includes(dropdownMenu)) {
+      dropdownMenu.classList.add("hidden");
+    }
+  });
+
+  // Step-navigation med farveskift på labels
+const steps = [
+  document.getElementById("step1"),
+  document.getElementById("step2"),
+  document.getElementById("step3"),
+  document.getElementById("step4"),
+  document.getElementById("step5") // nyt step
+];
+
+const stepLabels = [
+  document.getElementById("label-step-1"),
+  document.getElementById("label-step-2"),
+  document.getElementById("label-step-3"),
+  document.getElementById("label-step-4")
+  // step5 får ingen label, kan evt. tilføjes hvis du vil
+];
+
+
+function showStep(index) {
+  // Skjul alle steps undtagen det aktive
+  steps.forEach((step, i) => step.classList.toggle("hidden", i !== index));
+
+  // Opdater farver på step labels
+  stepLabels.forEach((label, i) => {
+    if (i === index) {
+      label.classList.remove("bg-[var(--color-primary)]");
+      label.classList.add("bg-[var(--color-secondary)]");
+    } else {
+      label.classList.remove("bg-[var(--color-secondary)]");
+      label.classList.add("bg-[var(--color-primary)]");
+    }
+  });
+}
+
+document.getElementById("next-step1")?.addEventListener("click", () => showStep(1));
+document.getElementById("next-step2")?.addEventListener("click", () => showStep(2));
+document.getElementById("next-step3")?.addEventListener("click", () => showStep(3));
+document.getElementById("back-step2")?.addEventListener("click", () => showStep(0));
+document.getElementById("back-step3")?.addEventListener("click", () => showStep(1));
+document.getElementById("back-step4")?.addEventListener("click", () => showStep(2));
+
+document.getElementById("submit")?.addEventListener("click", () => {
+  // her kan du evt. først validere input og sende data til backend
+  showStep(4); // step5 har index 4 i arrayet
+});
+
+
+});
+</script>
