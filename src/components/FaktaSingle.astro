@@ -1,0 +1,58 @@
+---
+import Heading from './Heading.astro';
+import Text from './Text.astro';
+---
+
+<section class="bg-[var(--color-secondary)] py-8 rounded-xl mb-12 max-w-6xl mx-auto">
+  <div class="w-full flex flex-col sm:flex-row justify-center items-center px-4 gap-6">
+
+    <!-- Felt 1 -->
+    <div class="flex-1 flex items-center justify-center p-6">
+      <!-- Indre wrapper: stacked på mobil, vandret på sm+; centreret i kolonnen -->
+      <div class="flex flex-col sm:flex-row items-center gap-4">
+        <img src="/img/ur.svg" alt="Ur ikon" class="w-12 h-12 sm:w-20 sm:h-20 object-contain" />
+        <div class="flex flex-col items-start text-left">
+          <Heading
+            htmlheading="h4"
+            size="h4_dark"
+            weight="bold"
+            font="overskrifter"
+            color="color-text"
+            stylingclasses="mb-2"
+          >
+            Varighed:
+          </Heading>
+          <Text teksttype="brødtekst_dark">
+            Ca. 90 dage
+          </Text>
+        </div>
+      </div>
+    </div>
+
+    <!-- Divider -->
+    <div class="hidden sm:block w-px h-32 bg-[var(--color-text)] mx-6 self-center"></div>
+
+    <!-- Felt 2 -->
+    <div class="flex-1 flex items-center justify-center p-6">
+      <div class="flex flex-col sm:flex-row items-center gap-4">
+        <img src="/img/pung.svg" alt="Pung ikon" class="w-12 h-12 sm:w-20 sm:h-20 object-contain" />
+        <div class="flex flex-col items-start text-left">
+          <Heading
+            htmlheading="h4"
+            size="h4_dark"
+            weight="bold"
+            font="overskrifter"
+            color="color-text"
+            stylingclasses="mb-2"
+          >
+            Pris:
+          </Heading>
+          <Text teksttype="brødtekst_dark">
+            Fra 86.000-92.000 DKK
+          </Text>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
