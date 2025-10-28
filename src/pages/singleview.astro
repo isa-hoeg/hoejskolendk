@@ -15,12 +15,14 @@ import SoMe from "../components/SoMe.astro";
 import Forskel from "../components/Forskel.astro";
 import Citater from "../components/Citater.astro";
 import Accordion from "../components/Accordion.astro";
+import FaktaSingle from "../components/FaktaSingle.astro";
+import Program from "../components/Program.astro";	
 
 ---
 <MainLayout title="Titel">
 	
 	<Hero />
-	<main class="container mx-auto p-4">
+	
 		<FaktaSingle />
 		<Heading htmlheading="h2" size="h2_dark" font="overskrifter">Program</Heading>
 		<Program />
@@ -28,6 +30,6 @@ import Accordion from "../components/Accordion.astro";
         <Accordion />
         <Heading htmlheading="h2" size="h2_dark" font="overskrifter">Fölg med på rejsen</Heading>
 		<SoMe />
-	</main>
+	
 	
 </MainLayout>
