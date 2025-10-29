@@ -17,32 +17,156 @@ import Citater from "../components/Citater.astro";
 
 ---
 <MainLayout title="Titel">
-	
-	<Hero />
+  <Hero />
 
-	<main>
-		<div class="container mx-auto px-4">
-			<FaktaHero />
-			<Heading htmlheading="h2" size="h2_dark" font="overskrifter" stylingclasses="text-center pb-10">Om os</Heading>
-			<Udvalgte />
-			<Infomoede />
-			<Heading htmlheading="h2" size="h2_dark" font="overskrifter" stylingclasses="text-center pb-10"> Alle rejser</Heading>
-		</div>
+  <main>
+    <div class="container mx-auto px-4">
+      <FaktaHero />
 
-		<div class="">
-			<Cards />
-		</div>
+      <Heading htmlheading="h2" size="h2_dark" font="overskrifter" stylingclasses="text-center pt-10">
+        Om os
+      </Heading>
 
-		<div class="container mx-auto px-4">
-			<Heading htmlheading="h2" size="h2_light" font="overskrifter" stylingclasses="text-center pb-10">Fölg med på rejsen</Heading>
-			<SoMe />
-			<Heading htmlheading="h2" size="h2_dark" font="overskrifter" stylingclasses="text-center pb-10">Vi gör forskel</Heading>
-			<Text teksttype="brødtekst_dark">Vi tror på, at alle kan gøre en forskel - selv en højskole fra Danmark. Vi støtter derfor Verdens Skoves arbejde med bevarelse og bæredygtig brug af verdens skove. </Text>
-			<Forskel />
-			<Button>Læs om vores indsats</Button>
-			<Heading htmlheading="h2" size="h2_dark" font="overskrifter" stylingclasses="text-center pb-10"> Det siger andre?</Heading>
-			<Citater />
-		</div>
-	</main>
-	
+      <!-- Om os sektion -->
+      <div class="grid grid-cols-2 gap-10 mt-10 mb-20">
+        <div class="space-y-4">
+          <Text teksttype="brødtekst_dark">
+           HÖJSKOLENDK er noget for dig, hvis du vil på højskole i udlandet og er vild med højskolefællesskab, vil med på et fantastisk rejseeventyr, glæder dig til at lære om fremmede kulturer, vil rejse med rygsæk, drømmer om en fed grupperejse med andre skønne unge, vil opleve et stærkt sammenhold og ønsker inspirerende og meningsfuld undervisning. Du er sikker på en tryg rejseoplevelse da vi er medlem af Rejsegarantifonden.
+          </Text>
+          <Text teksttype="brødtekst_dark">
+            HÖJSKOLENDK er en dansk højskole for unge i alderen ca. 18-30 år.
+          </Text>
+          <Text teksttype="brødtekst_dark">
+            Vi brænder for oplevelser, fællesskab og mødet med nye mennesker og kulturer; derfor laver vi eventyrlige højskoleophold i udlandet.
+        </div>
+
+        <div class="space-y-4">
+          <Text teksttype="brødtekst_dark">
+            Med eventyr, kulturmøder, nysgerrighed og et enestående fællesskab som stærkt fundament, brænder vi for at give vores elever et fantastisk rejseeventyr og inspirere dem til at skabe og leve meningsfulde liv. Derfor laver vi højskoleophold i udlandet.
+          </Text>
+          <Text teksttype="brødtekst_dark">
+			Vi vil give unge deres livs rejseeventyr – og med et særligt fokus på at skabe mere bevidsthed, perspektiv, nysgerrighed, rummelighed, selvindsigt og kulturforståelse vil vi inspirere vores elever til at skabe et meningsfuldt, spændende og sjovt liv for dem.
+          </Text>
+          <Text teksttype="brødtekst_dark">
+            Vi glæder os til at lære dig at kende!
+          </Text>
+        </div>
+      </div>
+
+      <Udvalgte />
+      <Infomoede />
+
+      <Heading htmlheading="h2" size="h2_dark" font="overskrifter" stylingclasses="text-center pb-10">
+        Alle rejser
+      </Heading>
+
+      <!-- Cards sektion -->
+      <Cards />
+
+	   <Heading htmlheading="h2" size="h2_light" font="overskrifter" stylingclasses="text-center pb-10">
+        Fölg med på rejsen
+      </Heading>
+
+	   <SoMe />
+	  
+	 
+
+      <!-- Højskole i udlandet sektion -->
+      <div class="grid grid-cols-2 gap-10 mt-10 items-center">
+		<div class="relative flex justify-center items-center mt-10">
+	<!-- Første billede -->
+	<img
+		src="/img/havet.webp"
+		alt="havet_gruppebillede"
+		class="rounded-xl hover:animate-wiggle animate-infinite animate-duration-[2000ms] max-w-md z-10 -rotate-8"
+	/>
+	<!-- Andet billede lidt forskudt -->
+	<img
+		src="/img/gruppebilled2.webp"
+		alt="Gruppebillede"
+		class="rounded-xl hover:animate-wiggle animate-infinite animate-duration-[2000ms] max-w-md absolute top-60 left-30 z-0"
+	/>
+	</div>
+        <div>
+          <Heading htmlheading="h3" size="h3_dark" font="overskrifter" stylingclasses="py-5">
+            Uforglemmelig höjskole i udlandet
+          </Heading>
+
+              <Text teksttype="brødtekst_dark" stylingclasses="mb-4 mx-2">
+				Drømmer du om at tage på højskole i udlandet for unge? Med HÖJSKOLENDK får du dit livs eventyr fyldt med fællesskab, fantastiske oplevelser og meningsfuld læring. Et højskoleophold i udlandet er din chance for at opleve verden, udvikle dig som menneske og skabe venskaber for livet. 
+				</Text>
+				<Text teksttype="brødtekst_dark" stylingclasses="mb-4 mx-2">
+				Du rejser sammen med andre unge og danske rejseledere til spændende destinationer som Bali, Hawaii, Australien, New York, Tokyo, Indien og Mexico – og kan vælge mellem alt fra vilde naturoplevelser og adventureaktiviteter til kulturelle møder og storbyliv. 
+				</Text>
+				<Text teksttype="brødtekst_dark" stylingclasses="mb-4 mx-2">
+				Hver rejse kombinerer oplevelser og personlig udvikling, så du både lærer om verden og dig selv. Du kan tage på højskoleophold i udlandet i sommerferien på omkring 5 uger eller vælge et længere ophold på 2–3 måneder i dit sabbatår. Uanset hvornår du rejser, venter fællesskab, eventyr og oplevelser, du aldrig glemmer. 
+				</Text>
+				<Text teksttype="brødtekst_dark" stylingclasses="mb-4 mx-2">
+				Tag på højskole i udlandet med HÖJSKOLENDK – og få et eventyr for livet.
+				</Text>
+        </div>
+
+    
+      </div>
+	<!-- Højskole i udlandet sektion -->
+	<div class="grid grid-cols-2 gap-10 items-center my-20">
+	<!-- Tekst til venstre -->
+	<div>
+		<Heading htmlheading="h3" size="h3_dark" font="overskrifter" stylingclasses="py-5">
+	Rejsehöjskole i udlandet
+		</Heading>
+
+		<Text teksttype="brødtekst_dark" stylingclasses="mb-4">
+		Drømmer du om at tage på højskole i udlandet for unge? Med HÖJSKOLENDK får du dit livs eventyr fyldt med fællesskab, fantastiske oplevelser og meningsfuld læring. Et højskoleophold i udlandet er din chance for at opleve verden, udvikle dig som menneske og skabe venskaber for livet. 
+		</Text>
+		<Text teksttype="brødtekst_dark" stylingclasses="mb-4">
+		Du rejser sammen med andre unge og danske rejseledere til spændende destinationer som Bali, Hawaii, Australien, New York, Tokyo, Indien og Mexico – og kan vælge mellem alt fra vilde naturoplevelser og adventureaktiviteter til kulturelle møder og storbyliv. 
+		</Text>
+		<Text teksttype="brødtekst_dark" stylingclasses="mb-4">
+		Hver rejse kombinerer oplevelser og personlig udvikling, så du både lærer om verden og dig selv. Du kan tage på højskoleophold i udlandet i sommerferien på omkring 5 uger eller vælge et længere ophold på 2–3 måneder i dit sabbatår. Uanset hvornår du rejser, venter fællesskab, eventyr og oplevelser, du aldrig glemmer. 
+		</Text>
+		<Text teksttype="brødtekst_dark" stylingclasses="mb-4">
+		Tag på højskole i udlandet med HÖJSKOLENDK – og få et eventyr for livet.
+		</Text>
+
+		
+	</div>
+
+	<div class="relative flex justify-center items-center">
+	<!-- Første billede -->
+	<img
+		src="/img/gruppebilled.webp"
+		alt="Gruppebillede"
+		class="rounded-xl hover:animate-wiggle animate-infinite animate-duration-[2000ms] max-w-md z-10"
+	/>
+	<!-- Andet billede lidt forskudt -->
+	<img
+		src="/img/bryllup.webp"
+		alt="Gruppebillede_bryllup"
+		class="rounded-xl hover:animate-wiggle animate-infinite animate-duration-[2000ms] max-w-md absolute top-50 left-50 z-0"
+	/>
+	</div>
+
+</div>
+      <Heading htmlheading="h2" size="h2_dark" font="overskrifter" stylingclasses="text-center pb-10 mt-20">
+        Vi gör forskel
+      </Heading>
+
+      <Text teksttype="brødtekst_dark" stylingclasses="text-center mx-30">
+      Vi tror på, at alle kan gøre en forskel - selv en højskole fra Danmark. Vi støtter derfor Verdens Skoves arbejde med bevarelse og bæredygtig brug af verdens skove. 
+      </Text>
+
+      <Forskel />
+
+      <div class="flex justify-center py-10">
+        <Button>Læs om vores indsats</Button>
+      </div>
+
+      <Heading htmlheading="h2" size="h2_dark" font="overskrifter" stylingclasses="text-center pb-10 mt-20">
+        Det siger andre
+      </Heading>
+
+      <Citater />
+    </div>
+  </main>
 </MainLayout>
