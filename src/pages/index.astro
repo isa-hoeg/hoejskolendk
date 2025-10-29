@@ -19,21 +19,30 @@ import Citater from "../components/Citater.astro";
 <MainLayout title="Titel">
 	
 	<Hero />
-	<main class="container mx-auto px-4">
-		<FaktaHero />
-		<Heading htmlheading="h2" size="h2_dark" font="overskrifter" stylingclasses="text-center pb-10">Om os</Heading>
-		<Udvalgte />
-		<Infomoede />
-		<Heading htmlheading="h2" size="h2_dark" font="overskrifter" stylingclasses="text-center pb-10"> Alle rejser</Heading>
-		<Cards />
-		<Heading htmlheading="h2" size="h2_light" font="overskrifter" stylingclasses="text-center pb-10">Fölg med på rejsen</Heading>
-		<SoMe />
-		<Heading htmlheading="h2" size="h2_dark" font="overskrifter" stylingclasses="text-center pb-10">Vi gör forskel</Heading>
-		<Text teksttype="brødtekst_dark">Vi tror på, at alle kan gøre en forskel - selv en højskole fra Danmark. Vi støtter derfor Verdens Skoves arbejde med bevarelse og bæredygtig brug af verdens skove. </Text>
-		<Forskel />
-		<Button>Læs om vores indsats</Button>
-		<Heading htmlheading="h2" size="h2_dark" font="overskrifter" stylingclasses="text-center pb-10"> Det siger andre?</Heading>
-		<Citater />
+
+	<main>
+		<div class="container mx-auto px-4">
+			<FaktaHero />
+			<Heading htmlheading="h2" size="h2_dark" font="overskrifter" stylingclasses="text-center pb-10">Om os</Heading>
+			<Udvalgte />
+			<Infomoede />
+			<Heading htmlheading="h2" size="h2_dark" font="overskrifter" stylingclasses="text-center pb-10"> Alle rejser</Heading>
+		</div>
+
+		<div class="">
+			<Cards />
+		</div>
+
+		<div class="container mx-auto px-4">
+			<Heading htmlheading="h2" size="h2_light" font="overskrifter" stylingclasses="text-center pb-10">Fölg med på rejsen</Heading>
+			<SoMe />
+			<Heading htmlheading="h2" size="h2_dark" font="overskrifter" stylingclasses="text-center pb-10">Vi gör forskel</Heading>
+			<Text teksttype="brødtekst_dark">Vi tror på, at alle kan gøre en forskel - selv en højskole fra Danmark. Vi støtter derfor Verdens Skoves arbejde med bevarelse og bæredygtig brug af verdens skove. </Text>
+			<Forskel />
+			<Button>Læs om vores indsats</Button>
+			<Heading htmlheading="h2" size="h2_dark" font="overskrifter" stylingclasses="text-center pb-10"> Det siger andre?</Heading>
+			<Citater />
+		</div>
 	</main>
 	
 </MainLayout>
