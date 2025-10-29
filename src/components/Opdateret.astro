@@ -1,0 +1,135 @@
+---
+import Text from "../components/Text.astro";
+import Heading from "./Heading.astro";
+const { id = "update-modal" } = Astro.props;
+---
+<dialog
+  id="update-modal"
+  class="backdrop:bg-black/50 p-10 rounded-3xl max-w-8xl w-11/12 mx-auto bg-primary relative mt-4"
+>
+ <!-- Luk-knap -->
+  <button
+    type="button"
+    class="absolute top-4 right-6 text-3xl text-text hover:text-secondary transition"
+    onclick="this.closest('dialog').close()"
+    aria-label="Luk modal"
+  >
+    &times;
+  </button>
+
+<section class="container mx-w-7xl px-4 py-20 space-y-6 grid grid-cols-2 gap-12">
+    <div>
+<h3 class="font-display text-6xl text-text pb-4">Hold dig opdateret</h3>
+<p class="text-text font-serif text-[16px] p-2">Overvejer du et af vores højskoleophold i udlandet? Tilmeld dig og hold dig opdateret om afgangene.</p>
+<ul class="list-disc list-inside">
+    <li class="text-text font-serif text-[16px]">Det er gratis og helt uforpligtende</li>
+    <li class="text-text font-serif text-[16px]">Du får besked, når der er nyt – fx “få pladser” eller ændringer i afgangene</li>
+    <li class="text-text font-serif text-[16px]">Du hører fra os, inden en afgang bliver udsolgt</li>
+</ul>
+<p class="text-text font-serif text-[16px] p-2">Bemærk: Denne tilmelding sikrer ikke en plads på opholdet, men giver dig mulighed for at følge med og blive kontaktet, før der er udsolgt.</p>
+<p class="text-text font-serif text-[16px] p-2">Udfyld formularen med dine oplysninger – så holder vi dig løbende opdateret.</p>
+<img src="/svg/opdateret_fly.svg" alt="" class="">
+</div>
+<div>
+    <form class="">
+        <div class="flex flex-col gap-2 pb-4">
+  
+ <label class="font-display text-text text-xl" for="text">Vælg en destination</label>
+  <select
+    id="country"
+    name="country"
+    class="w-full rounded-2xl border-none bg-accent-green placeholder:text-secondary placeholder:font-display py-3 px-6 "
+  >
+
+    <option value="">Vælg </option>
+    <option value="Maldiverne, Sri Lanka, Bali & Gili Islands">Maldiverne, Sri Lanka, Bali & Gili Islands</option>
+    <option value="Maldiverne, Sri Lanka, Bali, Gili Island, Japan & Australien">Maldiverne, Sri Lanka, Bali, Gili Island, Japan & Australien</option>
+    <option value="Australien, New Zealand, Vietnam, Bali, Gili Island & Lombok">Australien, New Zealand, Vietnam, Bali, Gili Island & Lombok</option>
+    <option value="New York City, Hawaii, Australien, Japan, Bali & Gili Islands">New York City, Hawaii, Australien, Japan, Bali & Gili Islands</option>
+    <option value="Australien, Japan, Bali & Gili Islands">Australien, Japan, Bali & Gili Islands</option>
+    <option value="Australien, New Zealand, Vietnam, Bali, Gili Island & Lombok">Brasilien, Bolivia, Colombia, Ecuador, Peru & Argentina</option>
+    <option value="Brasilien, Bolivia, Colombia, Ecuador, Peru & Argentina">Bali, Lombok & Gili Island</option>
+    <option value="Bali, Lombok & Gili Island">Brasilien, Colombia, Costa Rica & Mexico</option>
+    <option value="Brasilien, Colombia, Costa Rica & Mexico">Indien, Nepal, Thailand, Vietnam & Sri Lanka</option>
+    <option value="Indien, Nepal, Thailand, Vietnam & Sri Lanka">Sydkorea & Japan</option>
+    <option value="Sydkorea & Japan">Japan</option>
+
+  </select>
+</div>
+        <div class="grid grid-cols-2 gap-4 pb-4">
+            <div>
+                <label class="font-display text-text text-xl" for="text">Fornavn & mellemnavn:</label>
+                <input class="w-full  rounded-2xl border-none bg-accent-green placeholder:text-secondary/50 placeholder:font-serif py-3 px-6" type="text" id="name" placeholder="Lars Peter">
+            </div>
+            <div>
+                <label class="font-display text-text text-xl" for="text">Efternavn:</label>
+                <input class="w-full  rounded-2xl border-none bg-accent-green placeholder:text-secondary/50 placeholder:font-serif py-3 px-6" type="text" id="name" placeholder="Hansen">
+            </div>
+        </div>
+        <div class="grid grid-cols-2 gap-4 pb-4">
+            <div>
+                <label class="font-display text-text text-xl" for="text">Email:</label>
+                <input class="w-full  rounded-2xl border-none bg-accent-green placeholder:text-secondary/50 placeholder:font-serif py-3 px-6" type="text" id="name" placeholder="Larspeter@gmail.com">
+            </div>
+            <div>
+                <label class="font-display text-text text-xl" for="tel">Telefonnummer:</label>
+                <div class="flex gap-2 items-center">
+                    <select class="rounded-lg bg-accent-green text-secondary border-none px-4 py-2 font-serif">
+                        <option value="+45">🇩🇰 +45</option>
+                        <option value="+46">🇸🇪 +46</option>
+                        <option value="+47">🇳🇴 +47</option>
+                    </select>
+
+  <input type="tel" id="phone" placeholder="12 34 56 78" class="placeholder:font-serif flex-1 rounded-lg bg-accent-green text-secondary placeholder:text-secondary/60 border-none px-4 py-2"/>
+                </div>
+            </div>
+        </div>
+        <div class="grid grid-cols-2 gap-4 pb-4">
+  <div>
+ <label class="font-display text-text text-xl" for="text">Køn:</label>
+  <select
+    id="country"
+    name="country"
+    class="w-full rounded-2xl border-none bg-accent-green placeholder:text-secondary placeholder:font-display py-3 px-6 "
+  >
+    <option value="">Vælg</option>
+    <option value="mand">Mand</option>
+    <option value="kvinde">Kvinde</option>
+    <option value="andet">Andet</option>
+    
+
+  </select>
+  </div>
+</div>
+        <div class="col-span-full">
+                <label class="font-display text-text text-xl" for="text">Submission Description:</label>
+                <div class="mt-2">
+                        <textarea id="about" name="about" rows="3" class="w-full rounded-3xl bg-accent-green px-3 py-1.5 text-base text-secondary "></textarea>
+                </div>
+                </div>
+
+        </div>
+        <button
+  type="submit"
+  class="group bg-secondary mt-10 font-display p-4 px-10 text-2xl rounded-3xl text-text cursor-pointer flex items-center gap-3 duration-300"
+>
+  <span>Bliv opdateret</span>
+  <img
+    src="/svg/notification.svg"
+    alt="Pil"
+    class="w-6 h-6 transition-transform duration-300 group-hover:animate-wiggle-more group-hover:animate-infinite group-hover:animate-duration-200"
+  />
+</button>
+    </form>
+</div>
+</section>
+</dialog>
+
+<script is:client>
+  // Gør det muligt at åbne/lukke fra hvor som helst
+  const dialog = document.getElementById({id});
+  if (dialog) {
+    window[`open_${{id}}`] = () => dialog.showModal();
+    window[`close_${{id}}`] = () => dialog.close();
+  }
+</script>

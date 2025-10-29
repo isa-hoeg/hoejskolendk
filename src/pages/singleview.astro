@@ -17,6 +17,7 @@ import Citater from "../components/Citater.astro";
 import Accordion from "../components/Accordion.astro";
 import FaktaSingle from "../components/FaktaSingle.astro";
 import Program from "../components/Program.astro";	
+import Opdateret from "../components/Opdateret.astro";
 
 ---
 <MainLayout title="Titel">
@@ -24,6 +25,23 @@ import Program from "../components/Program.astro";
 	<Hero />
 	
 		<FaktaSingle />
+
+<button
+  type="submit"
+  class="group bg-secondary mt-10 font-display p-4 px-10 text-2xl rounded-3xl text-text cursor-pointer flex items-center gap-3 duration-300"
+ onclick="document.getElementById('update-modal').showModal()">
+  <span>Bliv opdateret</span>
+  <img
+    src="/svg/notification.svg"
+    alt="Pil"
+    class="w-6 h-6 transition-transform duration-300 group-hover:animate-wiggle-more group-hover:animate-infinite group-hover:animate-duration-200"
+  />
+</button>
+<!-- Du importerer og PLACERER modalen her, så den findes i DOM -->
+<Opdateret id="update-modal"/>
+  <!-- Hvis du vil, kan du også bare lade komponenten have indholdet internt og droppe slot -->
+  <!-- Din section/form som indhold -->
+
 		<Heading htmlheading="h2" size="h2_dark" font="overskrifter">Program</Heading>
 		<Program />
         <Heading htmlheading="h2" size="h2_dark" font="overskrifter">Praktisk info</Heading>
