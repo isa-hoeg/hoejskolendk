@@ -1,0 +1,447 @@
+---
+import Heading from './Heading.astro';
+import Text from './Text.astro';
+---
+
+<section class="flex flex-row h-[80vh] max-w-7xl mx-auto my-12 bg-[var(--color-secondary)] rounded-xl overflow-hidden">
+
+  <!-- OVERBLIK -->
+  <details id="overblik" class="accordion-item group border-r border-[var(--color-text)] flex flex-row items-stretch flex-[0_0_8rem] min-h-0 transition-all duration-300" open>
+    <summary
+      class="accordion-tab relative bg-[var(--color-accent-green)] w-40 flex flex-col items-center justify-start cursor-pointer select-none text-center p-0 h-full">
+      <!-- pil øverst -->
+     <span class="absolute top-2 left-1/2 -translate-x-1/2">
+  <svg class="w-5 h-5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img">
+    <circle cx="12" cy="12" r="10" fill="var(--color-secondary)" stroke="var(--color-accent-orange)" stroke-width="1.5"/>
+    <path d="M10 8l4 4-4 4" fill="none" stroke="var(--color-accent-orange)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+</span>
+
+      <Heading
+        htmlheading="h3"
+        size="h3_light"
+        weight="bold"
+        font="overskrifter"
+        stylingclasses="mt-10 rotate-180 [writing-mode:vertical-rl] [text-orientation:mixed]"
+      >
+        OVERBLIK
+      </Heading>
+    </summary>
+    <div class="accordion-content hidden flex-1 min-h-0 h-full overflow-y-auto p-6 text-[var(--color-text)]">
+      <Heading
+        htmlheading="h4"
+        size="h4_dark"
+        weight="bold"
+        font="overskrifter"
+        stylingclasses="mb-4 text-center"
+      >
+       BRASILIEN, COLOMBIA, 
+COSTA RICA & MEXICO
+      </Heading>
+
+      <Text teksttype="brødtekst_dark" stylingclasses="mb-12 text-center">
+       Tag med på et fantastisk latinamerikansk højskole-eventyr til fire af de mest spændende og skønne lande i Syd- og Mellemamerika. Glæd jer til en rejse med adventure, kulturoplevelser, regnskove, vulkaner, bjerge, lækre strande, surfing, samba, inka-ruiner, Maya-indianere, eksotiske dyr, vandfald, nationalparker, sol på næsen og masser af good-times i et skønt højskolefællesskab.
+
+      <Heading
+        htmlheading="h4"
+        size="h4_dark"
+        weight="bold"
+        font="overskrifter"
+        stylingclasses="mt-4 mb-2"
+      >
+        Brasilien
+      </Heading>
+
+      <Text teksttype="brødtekst_dark" stylingclasses="mb-4 mr-32"> 
+I Brasilien starter vi i Rio de Janeiro, hvor vi bor ved den verdensberømte strand Copacabana. Her står den bl.a. på adventurerace, favela-tur og lidt hyggelig sightseeing i den smukke storby. </Text>
+
+<Text teksttype="brødtekst_dark" stylingclasses="mb-12 mr-32">
+Dernæst rykker vi lidt syd for Rio, til den hyggelige kystby Macumba, hvor den står på lækker strand, brasilianske rytmer og inspirerende undervisning – og ikke mindst surfing, samba, beachvolley og fodboldkultur.</Text>
+
+
+ <Heading
+        htmlheading="h4"
+        size="h4_dark"
+        weight="bold"
+        font="overskrifter"
+        stylingclasses="mt-4 mb-2 ml-32"
+      >
+        Colombia
+      </Heading>
+
+      <Text teksttype="brødtekst_dark" stylingclasses="mb-4 ml-32"> 
+I Colombia skal vi på en fantastisk og eventyrlig rundrejse, hvor vi besøger både Cartagena, La Boquilla og Bogotá. Colombia er kendt som “Gateway to South America” og byder på fascinerende kultur, frodige nationalparker med vilde naturoplevelser, lækre strande, jungler og bjerge, smukke historiske byer og et væld af adrenalin oplevelser. </Text>
+<Text teksttype="brødtekst_dark" stylingclasses="mb-12 ml-32">
+På vores rundrejse skal vi ha’ en masse lækker lokal mad, opleve det festlige nightlife og møde det skønne og hjertevarme colombianske folk.</Text>
+
+
+ <Heading
+        htmlheading="h4"
+        size="h4_dark"
+        weight="bold"
+        font="overskrifter"
+        stylingclasses="mt-4 mb-2"
+      >
+        Costa Rica
+      </Heading>
+
+      <Text teksttype="brødtekst_dark" stylingclasses="mb-4 mr-32"> 
+I Costa Rica bor vi med strand i forhaven og jungle i baghaven – midt i den enestående natur, som landet er så kendt for. Mens brøleaberne slapper den i træerne omkring os, kaster vi os ud i ’Sport & Adventure’ og når vi trænger til en pause, hopper vi ned på stranden til det Caribiske hav. </Text>
+
+<Text teksttype="brødtekst_dark" stylingclasses="mb-4 mr-32">
+Glæd jer til lækker caribisk stemning, en skøn blanding af reggae- og surf-kultur, adventure-oplevelser og masser af sol på næsen.</Text>
+
+<Text teksttype="brødtekst_dark" stylingclasses="mb-12 mr-32">
+Efterfølgende stikker vi nordpå i Costa Rica, til skønne Monteverde. Et fantastisk smukt naturområde, der er kendt for jungle, regnskov, vandfald og eksotisk dyreliv og fortsætter med ‘Sport & Adventure’.</Text>
+
+ <Heading
+        htmlheading="h4"
+        size="h4_dark"
+        weight="bold"
+        font="overskrifter"
+        stylingclasses="mt-4 mb-2 ml-32"
+      >
+        Mexico
+      </Heading>
+
+      <Text teksttype="brødtekst_dark" stylingclasses="mb-4 ml-32"> 
+Mexico byder på en fantastisk kombination af sol, varme, eksotiske og lækre strande, et perfekt klima og naturskønne omgivelser på Yucatán-halvøen. Vi oplever den ældgamle mayakultur, med inka-ruiner og mayaindianere, og udforsker områdets fantastiske natur og dyreliv. </Text>
+
+<Text teksttype="brødtekst_dark" stylingclasses="mb-4 ml-32">
+Vi bor downtown i Playa del Carmen, hvor der er plads til både højskolefællesskab, afslapning og masser af good-times, når solen er gået ned. </Text>
+
+<Text teksttype="brødtekst_dark" stylingclasses="mb-12 ml-32">
+Vi bor downtown i Playa del Carmen, hvor der er plads til både højskolefællesskab, afslapning og masser af good-times, når solen er gået ned. </Text>
+
+<Text teksttype="brødtekst_dark" stylingclasses="mb-4 text-center">
+Sidst står den på fuld afslapning og de lækreste hvide strande på bounty-øen Isla Holbox – for her er der ø-stemning, farverige gader og ingen motoriserede køretøjer.</Text>
+
+    </div>
+  </details>
+
+  <!-- INKLUDERET -->
+  <details id="inkluderet" class="accordion-item group border-r border-[var(--color-text)] flex flex-row items-stretch flex-[0_0_10rem] min-h-0 transition-all duration-300">
+    <summary
+      class="accordion-tab relative bg-[var(--color-accent-green)] w-40 flex flex-col items-center justify-start cursor-pointer select-none text-center p-0 h-full">
+     <span class="absolute top-2 left-1/2 -translate-x-1/2">
+  <svg class="w-5 h-5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img">
+    <circle cx="12" cy="12" r="10" fill="var(--color-secondary)" stroke="var(--color-accent-orange)" stroke-width="1.5"/>
+    <path d="M10 8l4 4-4 4" fill="none" stroke="var(--color-accent-orange)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+</span>
+
+      <Heading
+        htmlheading="h3"
+        size="h3_light"
+        weight="bold"
+        font="overskrifter"
+        stylingclasses="mt-10 rotate-180 [writing-mode:vertical-rl] [text-orientation:mixed]"
+      >
+        INKLUDERET
+      </Heading>
+    </summary>
+    <div class="accordion-content hidden flex-1 min-h-0 h-full overflow-y-auto p-6 text-[var(--color-text)]">
+      <Heading
+        htmlheading="h4"
+        size="h4_dark"
+        weight="bold"
+        font="overskrifter"
+        stylingclasses="mb-8"
+      >
+        Hvad er inkluderet? 
+      </Heading>
+
+      <Text teksttype="brødtekst_dark" stylingclasses="font-bold">
+Vores højskoleophold inkluderer altid:
+</Text>
+
+ <ul class="list-disc ml-6 mt-4 space-y-2">
+    <li><Text teksttype="brødtekst_dark">Dansk rejseleder på hele højskoleopholdet</Text></li>
+    <li><Text teksttype="brødtekst_dark">Danske undervisere – dygtige, inspirerende og engagerende</Text></li>
+    <li><Text teksttype="brødtekst_dark">24 timers vagttelefon – 365 dage om året</Text></li>
+    <li><Text teksttype="brødtekst_dark">Infobreve med bl.a., pakkeliste, opholdsinfo mm.</Text></li>
+    <li><Text teksttype="brødtekst_dark">Grundig vejledning vedr. visum og indrejseregler</Text></li>
+    <li><Text teksttype="brødtekst_dark">Afrejsemøde i Danmark ca. 5-6 uger inden afrejsedagen</Text></li>
+    <li><Text teksttype="brødtekst_dark">Fælles afrejse fra Københavns Lufthavn</Text></li>
+    <li><Text teksttype="brødtekst_dark">Transfers fra lufthavne tur/retur</Text></li>
+    <li><Text teksttype="brødtekst_dark">Personligt højskolebevis (til fx Kvote 2)</Text></li>
+    <li><Text teksttype="brødtekst_dark">Lukket Facebook-gruppe med dine nye højskolevenner</Text></li>
+    <li><Text teksttype="brødtekst_dark">15% rabat på vaccinationer hos www.sikkerrejse.dk</Text></li>
+    <li><Text teksttype="brødtekst_dark">Indkvartering under hele opholdet</Text></li>
+    <li><Text teksttype="brødtekst_dark">Entré og lokal transport ifm. program</Text></li>
+    <li><Text teksttype="brødtekst_dark">Skønne, dygtige og særligt udvalgte lokale guider</Text></li>
+    <li><Text teksttype="brødtekst_dark">Højskoleaftener med fællesskab, good-times og hygge</Text></li>
+    <li><Text teksttype="brødtekst_dark">Medlemskab i HÖJSKOLENDKs elevforening</Text></li>
+    <li><Text teksttype="brødtekst_dark">Et stærkt fokus på fællesskab, eventyr & adventure</Text></li>
+    <li><Text teksttype="brødtekst_dark">Bidrag til Rejsegarantifonden – medlemsnummer 2885</Text></li>
+    <li><Text teksttype="brødtekst_dark">Bidrag til ’World Animal Protection’</Text></li>
+    <li><Text teksttype="brødtekst_dark">Bidrag til fredning af skov i samarbejde med ’Verdens Skove’</Text></li>
+    <li><Text teksttype="brødtekst_dark" stylingclasses="mb-8">Vi planter 50 træer pr. elev i samarbejde med ’Trees.org’</Text></li>
+  </ul>
+
+ <Text teksttype="brødtekst_dark" stylingclasses="font-bold">
+Generelt for opholdet:</Text>
+
+<ul class="list-disc ml-6 mt-4 space-y-2">
+ <li><Text teksttype="brødtekst_dark">Flybilletter tur/retur</Text></li>
+    <li><Text teksttype="brødtekst_dark">Flyskatter, Afgifter & Bagage</Text></li>
+    <li><Text teksttype="brødtekst_dark">Introdage m/skræddersyet program for fællesskab</Text></li>
+     <li><Text teksttype="brødtekst_dark">HÖJSKOLENDK Adventurerace</Text></li>
+      <li><Text teksttype="brødtekst_dark">Undervisning i faget Teambuilding</Text></li>
+       <li><Text teksttype="brødtekst_dark">Undervisning i faget Sport & Adventure</Text></li>
+</ul>
+
+
+<section class="grid grid-cols-1 md:grid-cols-2 gap-6 my-12">
+  <!-- BOKS 1 -->
+  <div class="bg-[var(--color-text)] p-6 rounded-xl shadow-md">
+    <Heading
+      htmlheading="h4"
+      size="h4_light"
+      weight="bold"
+      font="overskrifter"
+      stylingclasses="mb-4"
+    >
+      Brasilien
+    </Heading>
+
+  <ul class="list-disc ml-6 space-y-2">
+  <li><Text teksttype="brødtekst_light"> - Indkvartering i Copacabana</Text></li>
+  <li><Text teksttype="brødtekst_light"> - Indkvartering i Macumba Beach</Text></li>
+  <li><Text teksttype="brødtekst_light"> - Adventurerace</Text></li>
+   <li><Text teksttype="brødtekst_light"> - Favela-Tour</Text></li>
+ <li><Text teksttype="brødtekst_light"> - Byvandring </Text></li>
+ <li><Text teksttype="brødtekst_light"> - Surf-dag</Text></li>
+  <li><Text teksttype="brødtekst_light"> - Hike – Pedra do Telégrafo</Text></li> 
+
+</ul>
+  </div>
+
+  <!-- BOKS 2 -->
+ <div class="bg-[var(--color-text)] p-6 rounded-xl shadow-md">
+    <Heading
+      htmlheading="h4"
+      size="h4_light"
+      weight="bold"
+      font="overskrifter"
+      stylingclasses="mb-4"
+    >
+    Colombia
+    </Heading>
+
+  <ul class="list-disc ml-6 space-y-2">
+  <li><Text teksttype="brødtekst_light"> - Indkvartering i Bogotá</Text></li>
+  <li><Text teksttype="brødtekst_light"> - Indkvartering i La Boquilla</Text></li>
+  <li><Text teksttype="brødtekst_light"> - Indkvartering i Cartagena</Text></li>
+   <li><Text teksttype="brødtekst_light"> - Gold Museum i Bogotá</Text></li>
+ <li><Text teksttype="brødtekst_light"> - Bogotá City Tour</Text></li>
+ <li><Text teksttype="brødtekst_light"> - Tejo – Nationalsporten i Colombia</Text></li>
+  <li><Text teksttype="brødtekst_light"> - Morgenmad alle dage</Text></li>
+ <li><Text teksttype="brødtekst_light"> - La Buena Smila Foundation</Text></li>
+ <li><Text teksttype="brødtekst_light"> - Kulturprojekter i La Boquilla</Text></li>
+  <li><Text teksttype="brødtekst_light"> - Cartagena City Tour</Text></li>
+
+
+</ul>
+  </div>  
+
+  <!-- BOKS 3 -->
+  <div class="bg-[var(--color-text)] p-6 rounded-xl shadow-md">
+    <Heading
+      htmlheading="h4"
+      size="h4_light"
+      weight="bold"
+      font="overskrifter"
+      stylingclasses="mb-4"
+    >
+    Costa Rica
+    </Heading>
+
+  <ul class="list-disc ml-6 space-y-2">
+  <li><Text teksttype="brødtekst_light"> - Indkvartering i San José</Text></li>
+  <li><Text teksttype="brødtekst_light"> - Indkvartering i Puerto Viejo</Text></li>
+  <li><Text teksttype="brødtekst_light"> - Indkvartering i Monteverde</Text></li>
+   <li><Text teksttype="brødtekst_light"> - Transfer fra San José til Puerto Viejo</Text></li>
+ <li><Text teksttype="brødtekst_light"> - River rafting, Purto Vierjo</Text></li>
+ <li><Text teksttype="brødtekst_light"> - Besøg ved kakaofarm, Puerto Viejo</Text></li>
+  <li><Text teksttype="brødtekst_light"> - Robinsondyst, Purto Viejo</Text></li>
+ <li><Text teksttype="brødtekst_light"> - Transfer til Monteverde</Text></li>
+ <li><Text teksttype="brødtekst_light"> - Zipline, Monteverde</Text></li>
+  <li><Text teksttype="brødtekst_light"> - Tarzan Swing, Monteverde</Text></li>
+  <li><Text teksttype="brødtekst_light"> - Hammock Bridge, Monteverde</Text></li>
+  <li><Text teksttype="brødtekst_light"> - Rappelling, Monteverde</Text></li>
+   <li><Text teksttype="brødtekst_light"> - Waterfall hike, Monteverde</Text></li>
+    <li><Text teksttype="brødtekst_light"> - Cloud Forest, Monteverde</Text></li>
+
+</ul>
+  </div>  
+
+  <!-- BOKS 4 -->
+  <div class="bg-[var(--color-text)] p-6 rounded-xl shadow-md">
+    <Heading
+      htmlheading="h4"
+      size="h4_light"
+      weight="bold"
+      font="overskrifter"
+      stylingclasses="mb-4"
+    >
+    Mexico
+    </Heading>
+
+  <ul class="list-disc ml-6 space-y-2">
+  <li><Text teksttype="brødtekst_light"> - Indkvartering i Playa Del Carmen</Text></li>
+  <li><Text teksttype="brødtekst_light"> - Indkvartering i Valladolid</Text></li>
+  <li><Text teksttype="brødtekst_light"> - Indkvartering i Isla Holbox</Text></li>
+   <li><Text teksttype="brødtekst_light"> - Heldagstur til Tulum</Text></li>
+ <li><Text teksttype="brødtekst_light"> - Heldagstur til Chitchén Itzá</Text></li>
+ <li><Text teksttype="brødtekst_light"> - Heldagstur til Rio Largartos & Las Coloradas</Text></li>
+  <li><Text teksttype="brødtekst_light"> - Snorkling</Text></li>
+ <li><Text teksttype="brødtekst_light"> - Cooking Class</Text></li>
+ <li><Text teksttype="brødtekst_light"> - Salsaundervisning</Text></li>
+  <li><Text teksttype="brødtekst_light"> - Besøg ved lokalt skoleprojekt</Text></li>
+  <li><Text teksttype="brødtekst_light"> - 5th Avenue Walk</Text></li>
+  <li><Text teksttype="brødtekst_light"> - Badning i undervandsgrotter</Text></li>
+   <li><Text teksttype="brødtekst_light"> - Flamingospotting</Text></li>
+    <li><Text teksttype="brødtekst_light"> - Taco night</Text></li>
+
+</ul>
+  </div>  
+</section>
+
+<Text teksttype="brødtekst_dark" stylingclasses="font-bold">
+Hvad er IKKE inkluderet:</Text>
+
+<ul class="list-disc ml-6 mt-4 space-y-2">
+ <li><Text teksttype="brødtekst_dark">Flybilletter tur/retur</Text></li>
+    <li><Text teksttype="brødtekst_dark">Lommepenge & drikkepenge</Text></li>
+    <li><Text teksttype="brødtekst_dark">Mad, drikke og snacks</Text></li>
+     <li><Text teksttype="brødtekst_dark">Rejseforsikring & afbestillingsforsikring</Text></li>
+      <li><Text teksttype="brødtekst_dark">Visum og evt. andre indrejsedokumenter</Text></li>
+       <li><Text teksttype="brødtekst_dark">Vaccinationer</Text></li>
+        <li><Text teksttype="brødtekst_dark">Drikkepenge</Text></li>
+</ul>
+
+<Text teksttype="brødtekst_dark" stylingclasses="italic mt-8">
+NB: Ændringer af program, aktiviteter, undervisning, m.v. kan forekomme jf. vejrforhold, sygdom og andet uforudset.
+</Text>
+
+
+    </div>
+  </details>
+
+  <!-- FAG -->
+  <details id="fag" class="accordion-item group border-r border-[var(--color-text)] flex flex-row items-stretch flex-[0_0_10rem] min-h-0 transition-all duration-300">
+    <summary
+      class="accordion-tab relative bg-[var(--color-accent-green)] w-40 flex flex-col items-center justify-start cursor-pointer select-none text-center p-0 h-full">
+     <span class="absolute top-2 left-1/2 -translate-x-1/2">
+  <svg class="w-5 h-5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img">
+    <circle cx="12" cy="12" r="10" fill="var(--color-secondary)" stroke="var(--color-accent-orange)" stroke-width="1.5"/>
+    <path d="M10 8l4 4-4 4" fill="none" stroke="var(--color-accent-orange)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+</span>
+
+      <Heading
+        htmlheading="h3"
+        size="h3_light"
+        weight="bold"
+        font="overskrifter"
+        stylingclasses="mt-10 rotate-180 [writing-mode:vertical-rl] [text-orientation:mixed]"
+      >
+        FAG
+      </Heading>
+    </summary>
+    <div class="accordion-content hidden flex-1 min-h-0 h-full overflow-y-auto p-6 text-[var(--color-text)]">
+      <Heading
+        htmlheading="h4"
+        size="h4_dark"
+        weight="bold"
+        font="overskrifter"
+        stylingclasses="mb-4"
+      >
+        Fagene
+      </Heading>
+
+      <Text teksttype="brødtekst_dark">
+        Du kan vælge mellem en række fag, der spænder fra kultur, sprog, sport og natur.
+      </Text>
+    </div>
+  </details>
+
+  <!-- KONTAKT -->
+  <details id="kontakt" class="accordion-item group flex flex-row items-stretch flex-[0_0_10rem] min-h-0 transition-all duration-300">
+    <summary
+      class="accordion-tab relative bg-[var(--color-accent-green)] w-40 flex flex-col items-center justify-start cursor-pointer select-none text-center p-0 h-full">
+      <span class="absolute top-2 left-1/2 -translate-x-1/2">
+  <svg class="w-5 h-5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img">
+    <circle cx="12" cy="12" r="10" fill="var(--color-secondary)" stroke="var(--color-accent-orange)" stroke-width="1.5"/>
+    <path d="M10 8l4 4-4 4" fill="none" stroke="var(--color-accent-orange)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+</span>
+
+      <Heading
+        htmlheading="h3"
+        size="h3_light"
+        weight="bold"
+        font="overskrifter"
+        stylingclasses="mt-10 rotate-180 [writing-mode:vertical-rl] [text-orientation:mixed]"
+      >
+        KONTAKT
+      </Heading>
+    </summary>
+    <div class="accordion-content hidden flex-1 min-h-0 h-full overflow-y-auto p-6 text-[var(--color-text)]">
+      <Heading
+        htmlheading="h4"
+        size="h4_dark"
+        weight="bold"
+        font="overskrifter"
+        stylingclasses="mb-4"
+      >
+        Kontakt os
+      </Heading>
+
+      <Text teksttype="brødtekst_dark">
+        Har du spørgsmål? Kontakt os på mail eller telefon – vi glæder os til at høre fra dig!
+      </Text>
+    </div>
+  </details>
+</section>
+
+<style>
+
+.accordion-item { 
+  min-height: 0;
+  height: 100%;
+}
+
+.accordion-content {
+  display: none;
+  flex: 1 1 0%;
+  min-height: 0;
+  height: 100%;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.accordion-item[open] {
+  flex: 1 1 0%;
+}
+.accordion-item[open] > .accordion-content {
+  display: block;
+}
+
+.accordion-item { min-height: 0; }
+</style>
+
+<script type="module">
+  // Kun én sektion åben ad gangen
+  const items = document.querySelectorAll('.accordion-item');
+  items.forEach(item => {
+    item.addEventListener('toggle', () => {
+      if (!item.open) return;
+      items.forEach(other => {
+        if (other !== item) other.open = false;
+      });
+      item.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+    });
+  });
+</script>
