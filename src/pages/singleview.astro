@@ -18,11 +18,12 @@ import Accordion from "../components/Accordion.astro";
 import FaktaSingle from "../components/FaktaSingle.astro";
 import Program from "../components/Program.astro";	
 import Opdateret from "../components/Opdateret.astro";
-
+import HeroSingleview from "../components/HeroSingleview.astro";
 ---
 <MainLayout title="Titel">
+	  <HeroSingleview />
+	<main class="container mx-auto p-4">
 	
-	<Hero />
 	
 		<FaktaSingle />
 
@@ -49,5 +50,5 @@ import Opdateret from "../components/Opdateret.astro";
         <Heading htmlheading="h2" size="h2_dark" font="overskrifter">Fölg med på rejsen</Heading>
 		<SoMe />
 	
-	
+	</main>
 </MainLayout>
