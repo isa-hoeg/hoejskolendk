@@ -2,14 +2,15 @@
 import "../styles/tailwind.css";
 import Heading from './Heading.astro';    
 const {id} = Astro.props;
+import FaktaHero from "./FaktaHero.astro";
 ---
 
 <section id={id} class="@container grid grid-cols-60 grid-rows-12">
     <img src="/img/hero_baggrund.webp" alt="" class="col-start-1 col-span-60 row-start-1 row-span-15 object-cover w-full"/>
-    <Heading htmlheading="h1" size="h1_hero" font="overskrifter" stylingclasses="col-start-10 col-span-40 row-start-4 -mt-4 row-span-15 animate-fade-up animate-once animate-duration-[1500ms]">
+    <Heading htmlheading="h1" size="h1_hero" font="overskrifter" stylingclasses="col-start-10 col-span-40 row-start-4 -mt-4 row-span-15 intersect:animate-fade-up animate-once animate-duration-[1500ms]">
         HÖJSKOLENDK
     </Heading>
-    <Heading htmlheading="h2" size="h2_light" font="overskrifter" stylingclasses="col-start-20 col-span-40 row-start-6 -mt-12 row-span-15 animate-fade-left animate-once animate-duration-[1500ms]">
+    <Heading htmlheading="h2" size="h2_light" font="overskrifter" stylingclasses="col-start-20 col-span-40 row-start-6 -mt-12 row-span-15 intersect:animate-fade-left animate-once animate-duration-[1500ms]">
        DIT LIVS EVENTYR
     </Heading>
  <img src="/img/mellemgrund.png" alt=""
