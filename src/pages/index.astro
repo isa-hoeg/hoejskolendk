@@ -29,17 +29,17 @@ const { id } = Astro.props;
     <div class="container mx-auto px-4">
 		
 
-	<div class="absolute w-[80%] max-w-none top-285 left-1/2 -translate-x-1/2">
+	<div class="absolute w-[80%] max-w-none top-220 left-1/2 -translate-x-1/2">
   <FaktaHero />
 </div>
 
-      <Heading htmlheading="h2" size="h2_dark" font="overskrifter" stylingclasses="text-center mt-40 pt-10 intersect:animate-fade-left animate-once animate-duration-[1500ms]">
+      <Heading htmlheading="h2" size="h2_dark" font="overskrifter" stylingclasses="text-center mt-60 pt-10 intersect:animate-fade-left animate-once animate-duration-[1500ms]">
         Om os
       </Heading>
 
       <!-- Om os sektion -->
       <div class="grid grid-cols-2 gap-10 mt-10 mb-20">
-        <div class="space-y-4 intersect:animate-fade-right animate-once animate-duration-[1500ms]">
+        <div class="space-y-4 intersect:animate-fade-right animate-once animate-duration-[1500ms] mb-20">
           <Text teksttype="brødtekst_dark">
            HÖJSKOLENDK er noget for dig, hvis du vil på højskole i udlandet og er vild med højskolefællesskab, vil med på et fantastisk rejseeventyr, glæder dig til at lære om fremmede kulturer, vil rejse med rygsæk, drømmer om en fed grupperejse med andre skønne unge, vil opleve et stærkt sammenhold og ønsker inspirerende og meningsfuld undervisning. Du er sikker på en tryg rejseoplevelse da vi er medlem af Rejsegarantifonden.
           </Text>
@@ -64,9 +64,10 @@ const { id } = Astro.props;
       </div>
 
       <Udvalgte />
+	  <img src="/svg/fly_info.svg" alt="" class="absolute w-90 top-570 right-20 animate-fly z-[-1]"/>
       <Infomoede id="infomoede" />
 </div>
-      <Heading htmlheading="h2" size="h2_dark" font="overskrifter" stylingclasses="text-center pb-10 intersect:animate-fade-right animate-once animate-duration-[1500ms]">
+      <Heading htmlheading="h2" size="h2_dark" font="overskrifter" stylingclasses="text-center pb-10 intersect:animate-fade-right animate-once animate-duration-[1500ms] mt-50">
         Alle rejser
       </Heading>
 
@@ -78,7 +79,7 @@ const { id } = Astro.props;
       </Heading>
 
        <SoMe />
-      
+      <img src="/svg/stroke1.svg" alt="" class="absolute w-100 top-1590 left-50 animate-fly z-[-1]">
       <!-- Højskole i udlandet sektion -->
       <div class="grid grid-cols-2 gap-10 mt-10 items-center intersect:animate-fade-right animate-once animate-duration-[1500ms]">
         <div class="relative flex justify-center items-center mt-10">
@@ -92,7 +93,7 @@ const { id } = Astro.props;
     <img
         src="/img/gruppebilled2.webp"
         alt="Gruppebillede"
-        class="rounded-xl hover:animate-wiggle animate-infinite animate-duration-[2000ms] max-w-md absolute top-45 left-30 z-0"
+        class="rounded-xl hover:animate-wiggle animate-infinite animate-duration-[2000ms] max-w-md absolute top-45 left-30 z-0 hover:z-10"
     />
     </div>
         <div id="oplevverdenen" id={id}>
@@ -137,9 +138,9 @@ const { id } = Astro.props;
         Tag på højskole i udlandet med HÖJSKOLENDK – og få et eventyr for livet.
         </Text>
 		</div>
-
-        
     </div>
+
+<img src="/svg/stroke2.svg" alt="" class="absolute w-100 top-1800 right-10 scale-70 animate-fly z-[-1]">
 
     <div class="relative flex justify-center items-center intersect:animate-fade-left animate-once animate-duration-[1500ms]">
     <!-- Første billede -->
@@ -152,11 +153,17 @@ const { id } = Astro.props;
     <img
         src="/img/bryllup.webp"
         alt="Gruppebillede_bryllup"
-        class="rounded-xl hover:animate-wiggle animate-infinite animate-duration-[2000ms] max-w-md absolute top-30 left-50 z-0"
+        class="rounded-xl hover:animate-wiggle animate-infinite animate-duration-[2000ms] max-w-md absolute top-30 left-50 z-0 hover:z-10"
     />
     </div>
 
+	</div>
+
+	<img src="/svg/strokefly3.svg" alt="" class="absolute w-100 top-1990 scale-140 right-90 z-[-1] ">
+<div class="flex justify-center ">
+  <img src="/img/gruppebillede.webp" alt="" class="mt-50 mb-30">
 </div>
+
       <Heading htmlheading="h2" size="h2_dark" font="overskrifter" stylingclasses="text-center pb-10 mt-25 intersect:animate-fade-right animate-once animate-duration-[1500ms]">
         Vi gør en forskel
       </Heading>
@@ -169,7 +176,7 @@ const { id } = Astro.props;
 
       
 <div  id="elevernesiger" id={id}>
-      <Heading htmlheading="h2" size="h2_dark" font="overskrifter" stylingclasses="text-center pb-10 mt-50 intersect:animate-fade-right animate-once animate-duration-[1500ms]" >
+      <Heading htmlheading="h2" size="h2_dark" font="overskrifter" stylingclasses="text-center pb-10 mt-70 intersect:animate-fade-right animate-once animate-duration-[1500ms]" >
         Det siger andre
       </Heading>
 </div>
