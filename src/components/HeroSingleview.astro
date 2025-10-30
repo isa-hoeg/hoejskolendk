@@ -1,0 +1,45 @@
+---
+import Opdateret from "../components/Opdateret.astro";
+---
+
+<section class="@container grid grid-cols-60 grid-rows-12">
+    <img src="/img/hero_singleview.webp" alt="" class="col-start-1 col-span-60 row-start-1 row-span-15 object-cover w-full"/>
+    <h1 class="font-display text-8xl text-text col-start-4 col-span-40 row-start-4 row-span-15">Brasilien, <br />Colombia, Mexico <br />& Costa Rica</h1>
+     <button
+  type="submit"
+  class="col-start-17 col-span-11 row-start-8
+         w-full h-15 flex items-center justify-center gap-3
+         font-display text-2xl leading-none rounded-3xl px-10
+         bg-secondary text-text cursor-pointer duration-300
+         group hover:opacity-90"
+  onclick="document.getElementById('update-modal').showModal()"
+>
+  <span>Bliv opdateret</span>
+  <img
+    src="/svg/notification.svg"
+    alt="notifikation"
+    class="w-6 h-6 transition-transform duration-300
+           group-hover:animate-wiggle-more group-hover:animate-infinite group-hover:animate-duration-200"
+  />
+</button>
+
+<a
+  href="/tilmeld"
+  class="col-start-4 col-span-11 row-start-8
+         w-full h-15 inline-flex items-center justify-center gap-3
+         font-display text-2xl leading-none rounded-3xl px-10
+         bg-accent-orange text-secondary cursor-pointer duration-300
+         group hover:bg-text"
+>
+  Tilmeld dig her!
+</a>
+
+
+    <video autoplay muted loop class="col-start-35 col-span-20 row-start-3 row-span-10 object-cover w-full rounded-3xl rotate-12 scale-70">
+        <source src="/brasilien_video.mp4" type="video/mp4">
+    </video>
+   
+
+<Opdateret id="update-modal"/>
+</section>
+
