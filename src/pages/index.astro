@@ -33,13 +33,13 @@ const { id } = Astro.props;
   <FaktaHero />
 </div>
 
-      <Heading htmlheading="h2" size="h2_dark" font="overskrifter" stylingclasses="text-center mt-40 pt-10">
+      <Heading htmlheading="h2" size="h2_dark" font="overskrifter" stylingclasses="text-center mt-40 pt-10 intersect:animate-fade-left animate-once animate-duration-[1500ms]">
         Om os
       </Heading>
 
       <!-- Om os sektion -->
       <div class="grid grid-cols-2 gap-10 mt-10 mb-20">
-        <div class="space-y-4">
+        <div class="space-y-4 intersect:animate-fade-right animate-once animate-duration-[1500ms]">
           <Text teksttype="brødtekst_dark">
            HÖJSKOLENDK er noget for dig, hvis du vil på højskole i udlandet og er vild med højskolefællesskab, vil med på et fantastisk rejseeventyr, glæder dig til at lære om fremmede kulturer, vil rejse med rygsæk, drømmer om en fed grupperejse med andre skønne unge, vil opleve et stærkt sammenhold og ønsker inspirerende og meningsfuld undervisning. Du er sikker på en tryg rejseoplevelse da vi er medlem af Rejsegarantifonden.
           </Text>
@@ -50,7 +50,7 @@ const { id } = Astro.props;
             Vi brænder for oplevelser, fællesskab og mødet med nye mennesker og kulturer; derfor laver vi eventyrlige højskoleophold i udlandet.
         </div>
 
-        <div class="space-y-4">
+        <div class="space-y-4 intersect:animate-fade-right animate-once animate-duration-[1500ms]">
           <Text teksttype="brødtekst_dark">
             Med eventyr, kulturmøder, nysgerrighed og et enestående fællesskab<br> som stærkt fundament, brænder vi for at give vores elever et fantastisk rejseeventyr og inspirere dem til at skabe og leve meningsfulde liv. Derfor laver vi højskoleophold i udlandet.
           </Text>
@@ -66,21 +66,21 @@ const { id } = Astro.props;
       <Udvalgte />
       <Infomoede id="infomoede" />
 </div>
-      <Heading htmlheading="h2" size="h2_dark" font="overskrifter" stylingclasses="text-center pb-10">
+      <Heading htmlheading="h2" size="h2_dark" font="overskrifter" stylingclasses="text-center pb-10 intersect:animate-fade-right animate-once animate-duration-[1500ms]">
         Alle rejser
       </Heading>
 
       <!-- Cards sektion -->
       <Cards id="allerejser"/>
 <div class="container mx-auto px-4" id="foelgmed">
-       <Heading htmlheading="h2" size="h2_dark" font="overskrifter" stylingclasses="text-center pb-5 mt-30">
-        Fölg med på rejsen
+       <Heading htmlheading="h2" size="h2_dark" font="overskrifter" stylingclasses="text-center pb-5 mt-30 intersect:animate-fade-left animate-once animate-duration-[1500ms]">
+        Følg med på rejsen
       </Heading>
 
        <SoMe />
       
       <!-- Højskole i udlandet sektion -->
-      <div class="grid grid-cols-2 gap-10 mt-10 items-center">
+      <div class="grid grid-cols-2 gap-10 mt-10 items-center intersect:animate-fade-right animate-once animate-duration-[1500ms]">
         <div class="relative flex justify-center items-center mt-10">
     <!-- Første billede -->
     <img
@@ -96,8 +96,8 @@ const { id } = Astro.props;
     />
     </div>
         <div id="oplevverdenen" id={id}>
-          <Heading htmlheading="h3" size="h3_dark" font="overskrifter" stylingclasses="py-5">
-            Uforglemmelig höjskole i udlandet
+          <Heading htmlheading="h3" size="h3_dark" font="overskrifter" stylingclasses="py-5 intersect:animate-fade-left animate-once animate-duration-[1500ms]">
+            Uforglemmelig højskole i udlandet
           </Heading>
 
               <Text teksttype="brødtekst_dark" stylingclasses="mb-4 mx-2">
@@ -120,10 +120,10 @@ const { id } = Astro.props;
     <div class="grid grid-cols-2 gap-10 items-center my-20">
     <!-- Tekst til venstre -->
     <div>
-        <Heading htmlheading="h3" size="h3_dark" font="overskrifter" stylingclasses="py-5">
-    Rejsehöjskole i udlandet
+        <Heading htmlheading="h3" size="h3_dark" font="overskrifter" stylingclasses="py-5 intersect:animate-fade-right animate-once animate-duration-[1500ms]">
+    Rejsehøjskole i udlandet
         </Heading>
-
+		<div class="intersect:animate-fade-left animate-once animate-duration-[1500ms]">
         <Text teksttype="brødtekst_dark" stylingclasses="mb-4">
         Drømmer du om at tage på højskole i udlandet for unge? Med HÖJSKOLENDK får du dit livs eventyr fyldt med fællesskab, fantastiske oplevelser og meningsfuld læring. Et højskoleophold i udlandet er din chance for at opleve verden, udvikle dig som menneske og skabe venskaber for livet. 
         </Text>
@@ -136,11 +136,12 @@ const { id } = Astro.props;
         <Text teksttype="brødtekst_dark" stylingclasses="mb-4">
         Tag på højskole i udlandet med HÖJSKOLENDK – og få et eventyr for livet.
         </Text>
+		</div>
 
         
     </div>
 
-    <div class="relative flex justify-center items-center">
+    <div class="relative flex justify-center items-center intersect:animate-fade-left animate-once animate-duration-[1500ms]">
     <!-- Første billede -->
     <img
         src="/img/gruppebilled.webp"
@@ -156,11 +157,11 @@ const { id } = Astro.props;
     </div>
 
 </div>
-      <Heading htmlheading="h2" size="h2_dark" font="overskrifter" stylingclasses="text-center pb-10 mt-25">
-        Vi gör forskel
+      <Heading htmlheading="h2" size="h2_dark" font="overskrifter" stylingclasses="text-center pb-10 mt-25 intersect:animate-fade-right animate-once animate-duration-[1500ms]">
+        Vi gør en forskel
       </Heading>
 
-      <Text teksttype="brødtekst_dark" stylingclasses="text-center mx-30">
+      <Text teksttype="brødtekst_dark" stylingclasses="text-center mx-30 intersect:animate-fade-left animate-once animate-duration-[1500ms]">
       Vi tror på, at alle kan gøre en forskel - selv en højskole fra Danmark. Vi støtter derfor Verdens Skoves arbejde med bevarelse og bæredygtig brug af verdens skove. 
       </Text>
 
@@ -168,7 +169,7 @@ const { id } = Astro.props;
 
       
 <div  id="elevernesiger" id={id}>
-      <Heading htmlheading="h2" size="h2_dark" font="overskrifter" stylingclasses="text-center pb-10 mt-20" >
+      <Heading htmlheading="h2" size="h2_dark" font="overskrifter" stylingclasses="text-center pb-10 mt-50 intersect:animate-fade-right animate-once animate-duration-[1500ms]" >
         Det siger andre
       </Heading>
 </div>
