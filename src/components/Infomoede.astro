@@ -3,9 +3,10 @@ import Heading from '../components/Heading.astro';
 import Text from '../components/Text.astro';
 import "../styles/tailwind.css";
 import Button from './Button.astro';
+const { id } = Astro.props;
 ---
 
-<div class="my-10">
+<div id={id} class="my-10">
   <Heading htmlheading="h2" size="h2_dark" font="overskrifter" stylingclasses="text-center pt-20">
           Kom til infomöde
         </Heading>

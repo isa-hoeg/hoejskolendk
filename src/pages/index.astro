@@ -14,9 +14,13 @@ import Cards from "../components/Cards.astro";
 import SoMe from "../components/SoMe.astro";
 import Forskel from "../components/Forskel.astro";
 import Citater from "../components/Citater.astro";
-
+import Header from "../components/Header.astro";
+const { id } = Astro.props;
 ---
 <MainLayout title="Titel">
+	<div class="fixed top-0 left-0 w-[1632] z-50 flex justify-center items-center mt-6">
+	<Header />
+	</div>
   <Hero />
 
   <main>
@@ -54,15 +58,15 @@ import Citater from "../components/Citater.astro";
       </div>
 
       <Udvalgte />
-      <Infomoede />
+      <Infomoede id="infomoede" />
 </div>
       <Heading htmlheading="h2" size="h2_dark" font="overskrifter" stylingclasses="text-center pb-10">
         Alle rejser
       </Heading>
 
       <!-- Cards sektion -->
-      <Cards />
-<div class="container mx-auto px-4">
+      <Cards id="allerejser"/>
+<div class="container mx-auto px-4" id="foelgmed">
 	   <Heading htmlheading="h2" size="h2_dark" font="overskrifter" stylingclasses="text-center pb-5 mt-30">
         Fölg med på rejsen
       </Heading>
@@ -85,7 +89,7 @@ import Citater from "../components/Citater.astro";
 		class="rounded-xl hover:animate-wiggle animate-infinite animate-duration-[2000ms] max-w-md absolute top-45 left-30 z-0"
 	/>
 	</div>
-        <div>
+        <div id="oplevverdenen" id={id}>
           <Heading htmlheading="h3" size="h3_dark" font="overskrifter" stylingclasses="py-5">
             Uforglemmelig höjskole i udlandet
           </Heading>
@@ -156,14 +160,12 @@ import Citater from "../components/Citater.astro";
 
       <Forskel />
 
-      <div class="flex justify-center py-10">
-        <Button>Læs om vores indsats</Button>
-      </div>
-
-      <Heading htmlheading="h2" size="h2_dark" font="overskrifter" stylingclasses="text-center pb-10 mt-20">
+      
+<div  id="elevernesiger" id={id}>
+      <Heading htmlheading="h2" size="h2_dark" font="overskrifter" stylingclasses="text-center pb-10 mt-20" >
         Det siger andre
       </Heading>
-
+</div>
       <Citater />
     </div>
   </main>
