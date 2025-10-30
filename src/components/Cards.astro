@@ -1,6 +1,7 @@
 ---
+const { id } = Astro.props;
 ---
-<section class="flex flex-wrap justify-center m-8">
+<section id={id} class="flex flex-wrap justify-center m-8">
     <!-- card 1 -->
 <a href="" class=" overflow-hidden max-w-[400px] block rounded-3xl hover:scale-103 transition-transform duration-400 ease-in-out">
     <div class="relative">
@@ -100,7 +101,7 @@
     </div>
 </a>
 <!-- card 8 -->
- <a href="" class=" overflow-hidden max-w-[400px] block rounded-3xl hover:scale-103 transition-transform duration-400 ease-in-out">
+ <a href="/singleview" class=" overflow-hidden max-w-[400px] block rounded-3xl hover:scale-103 transition-transform duration-400 ease-in-out">
     <div class="relative">
         <img src="/img/card8.webp" alt="elephant" class="object-cover h-auto w-full">
         <h3 class="absolute top-7 left-7 font-display text-3xl text-secondary">Brasilien, Colombia,<br /> Costa Rica & Mexico</h3>

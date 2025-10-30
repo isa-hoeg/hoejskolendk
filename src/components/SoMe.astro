@@ -1,5 +1,7 @@
-
-<section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-10 mb-30">
+---
+const { id } = Astro.props;
+---
+<section id={id} class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-10 mb-30">
   <!-- Embed 1 -->
   <div class="instagram-container flex justify-center">
     <blockquote
