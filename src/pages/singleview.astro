@@ -29,14 +29,49 @@ import Header from "../components/Header.astro";
         <div class="absolute w-full top-255 right-0">
             <FaktaSingle />
         </div>  
-
-        <div class="mt-50">
+        <img src="/svg/hoejrestroke.svg" alt="" class="absolute w-120 top-300 right-0 z-[-1] ">
+        <div class="mt-80 intersect:animate-fade-right">
         <Heading htmlheading="h2" size="h2_dark" font="overskrifter">Program</Heading>
+        
+        
+        <Program  />
+        <img src="/svg/venstrestroke_fly.svg" alt="" class="absolute w-70 top-190 left-280 z-[-1] ">
         </div>
-        <Program />
+        <div class="intersect:animate-fade-left">
         <Heading htmlheading="h2" size="h2_dark" font="overskrifter">Praktisk info</Heading>
-        <Accordion />
-
+        
+          <Accordion />
+        </div>
+        <div class="flex flex-row items-center gap-6 justify-center intersect:animate-fade-up">
+             <a 
+  href="/tilmeld"
+  class="col-start-16 col-span-11 row-start-10
+         w-auto h-15 inline-flex items-center justify-center gap-3
+         font-display text-2xl leading-none rounded-3xl px-10
+         bg-accent-orange text-secondary cursor-pointer duration-300
+         group hover:bg-text z-20 hover:animate-wiggle-more hover:animate-infinite hover:animate-duration-600"
+>
+  Tilmeld dig her!
+</a>
+      <button
+  type="submit"
+  class="col-start-19 col-span-11 row-start-8
+         w-auto h-15 flex items-center justify-center gap-3
+         font-display text-2xl leading-none rounded-3xl px-10
+         bg-secondary text-text cursor-pointer duration-300
+         group intersect:animate-fade-right"
+  onclick="document.getElementById('update-modal').showModal()"
+>
+  <span>Bliv opdateret</span>
+  <img
+    src="/svg/notification.svg"
+    alt="notifikation"
+    class="w-6 h-6 transition-transform duration-300
+           group-hover:animate-wiggle-more group-hover:animate-infinite group-hover:animate-duration-200 intersect:animate-fade-right"
+  />
+</button>
+</div>
+        <img src="/svg/stroke_accordion.svg" alt="" class="absolute w-120 top-790 scale-100 right-40 z-[-1] ">
         <Heading htmlheading="h2" size="h2_dark" font="overskrifter" stylingclasses="mt-50">Følg med på rejsen</Heading>
         <Text teksttype="brødtekst_dark" stylingclasses="pt-8">Følg med på vores sociale medier og få et indblik i hverdagen på højskolerejsen samt spændende rejseoplevelser og kulturelle møder.</Text>
         <SoMe />
