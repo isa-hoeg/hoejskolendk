@@ -16,26 +16,30 @@ import Forskel from "../components/Forskel.astro";
 import Citater from "../components/Citater.astro";
 import Accordion from "../components/Accordion.astro";
 import FaktaSingle from "../components/FaktaSingle.astro";
-import Program from "../components/Program.astro";	
+import Program from "../components/Program.astro";  
 import Opdateret from "../components/Opdateret.astro";
 import HeroSingleview from "../components/HeroSingleview.astro";
 import Header from "../components/Header.astro";
 ---
 <MainLayout title="Titel">
-	<Header />
-	  <HeroSingleview />
-	<main class="container mx-auto p-4">
-	
-	
-		<FaktaSingle />
 
+      <HeroSingleview />
+    <main class="container mx-auto p-4">
+        
+        <div class="absolute w-full top-255 right-0">
+            <FaktaSingle />
+        </div>  
 
-		<Heading htmlheading="h2" size="h2_dark" font="overskrifter">Program</Heading>
-		<Program />
+        <div class="mt-50">
+        <Heading htmlheading="h2" size="h2_dark" font="overskrifter">Program</Heading>
+        </div>
+        <Program />
         <Heading htmlheading="h2" size="h2_dark" font="overskrifter">Praktisk info</Heading>
         <Accordion />
-        <Heading htmlheading="h2" size="h2_dark" font="overskrifter">Fölg med på rejsen</Heading>
-		<SoMe />
-	
-	</main>
+
+        <Heading htmlheading="h2" size="h2_dark" font="overskrifter" stylingclasses="mt-50">Følg med på rejsen</Heading>
+        <Text teksttype="brødtekst_dark" stylingclasses="pt-8">Følg med på vores sociale medier og få et indblik i hverdagen på højskolerejsen samt spændende rejseoplevelser og kulturelle møder.</Text>
+        <SoMe />
+    
+    </main>
 </MainLayout>

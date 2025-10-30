@@ -3,9 +3,12 @@ import MainLayout from "../layouts/MainLayout.astro";
 import TilmeldForm from "../components/TilmeldForm.astro";
 import '../styles/tailwind.css';
 import Heading from "../components/Heading.astro";  
+import Header from "../components/Header.astro";
 ---
 <MainLayout title="Titel">
-	  <section class="py-20 bg-[var(--color-primary)] text-[var(--color-text)]">
+  <div class="mt-6"></div>
+  <Header />
+    <section class="py-20 bg-[var(--color-primary)] text-[var(--color-text)]">
     <div class="container mx-auto px-6">
       <TilmeldForm />
     </div>
