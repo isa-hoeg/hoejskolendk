@@ -6,56 +6,72 @@ import Text from '../components/Text.astro';
 
 <section class="bg-[var(--color-secondary)] py-12 rounded-xl mb-12">
   <div class="max-w-4xl mx-auto flex flex-col sm:flex-row justify-between items-center text-center px-4">
-    
-    <div class="flex-1">
+
+    <div class="flex-1 flex flex-col items-center justify-center">
       <Heading
-        htmlheading="h3"
-        size="h3_dark"
+        htmlheading="h2"
+        size="h2_dark"
         weight="bold"
         font="overskrifter"
         color="color-text"
       >
-        4,6 ⭐️
+        <span class="flex items-center justify-center gap-2 mb-2">
+          4,6
+          <svg xmlns="http://www.w3.org/2000/svg"
+               width="40" height="40"
+               viewBox="0 0 24 24"
+               fill="currentColor"
+               stroke="currentColor"
+               stroke-width="2"
+               stroke-linecap="round"
+               stroke-linejoin="round"
+               class="lucide lucide-star text-color-text">
+            <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/>
+          </svg>
+        </span>
       </Heading>
-      <Text teksttype="brødtekst_dark">
+
+      <Text teksttype="brødtekst_dark" stylingclasses="mt-3">
         I overordnet score på Trustpilot
       </Text>
     </div>
 
-    <div class="hidden sm:block w-px h-32 bg-[var(--color-text)] mx-6"></div>
 
-    
-    <div class="flex-1">
+    <div class="hidden sm:block w-0.5 h-28 bg-[var(--color-text)] mx-8"></div>
+
+ 
+    <div class="flex-1 flex flex-col items-center justify-center">
       <Heading
-        htmlheading="h3"
-        size="h3_dark"
+        htmlheading="h2"
+        size="h2_dark"
         weight="bold"
         font="overskrifter"
         color="color-text"
       >
         +500
       </Heading>
-      <Text teksttype="brødtekst_dark" >
+      <Text teksttype="brødtekst_dark" stylingclasses="mt-3">
         Glade og skønne elever årligt
       </Text>
     </div>
 
-  
-    <div class="hidden sm:block w-px h-32 bg-[var(--color-text)] mx-6"></div>
+    <div class="hidden sm:block w-0.5 h-28 bg-[var(--color-text)] mx-8"></div>
 
-    <div class="flex-1">
+    <div class="flex-1 flex flex-col items-center justify-center pt-3">
       <Heading
-        htmlheading="h3"
-        size="h3_dark"
+        htmlheading="h2"
+        size="h2_dark"
         weight="bold"
         font="overskrifter"
         color="color-text"
       >
         +15
       </Heading>
-      <Text teksttype="brødtekst_dark">
+      <Text teksttype="brødtekst_dark" stylingclasses="mt-3">
         Års erfaring med højskole i udlandet
       </Text>
     </div>
+
   </div>
 </section>
+
