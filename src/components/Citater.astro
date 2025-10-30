@@ -5,10 +5,10 @@ import Text from "./Text.astro";
 ---
 
 <section class="w-full py-8 mb-20">
-<div class="w-full mx-0 flex flex-col sm:flex-row justify-between items-stretch text-left gap-6">
+<div class="w-full mx-0 flex flex-col sm:flex-row justify-between items-stretch text-left gap-6 ">
     
     <!-- Citat 1 -->
-    <div class="flex-1 bg-[var(--color-accent-green)] rounded-lg shadow-md p-6 flex flex-col justify-between items-center text-center">
+    <div class="flex-1 bg-[var(--color-accent-green)] rounded-lg shadow-md p-6 flex flex-col justify-between items-center text-center intersect:animate-fade-down animate-once animate-duration-[1500ms]">
        <Heading
         htmlheading="h4"
         size="h4_light"
@@ -26,7 +26,7 @@ import Text from "./Text.astro";
     </div>
 
     <!-- Citat 2 -->
-  <div class="flex-1 bg-[var(--color-accent-green)] rounded-lg shadow-md p-6 flex flex-col justify-between items-center text-center">
+  <div class="flex-1 bg-[var(--color-accent-green)] rounded-lg shadow-md p-6 flex flex-col justify-between items-center text-center text-[var(--color-secondary)] px-10 intersect:animate-fade-up animate-once animate-duration-[1500ms]">
        <Heading
         htmlheading="h4"
         size="h4_light"
@@ -44,7 +44,7 @@ import Text from "./Text.astro";
     </div>
 
     <!-- Citat 3 -->
-   <div class="flex-1 bg-[var(--color-accent-green)] rounded-lg shadow-md p-6 flex flex-col justify-between items-center text-center">
+   <div class="flex-1 bg-[var(--color-accent-green)] rounded-lg shadow-md p-6 flex flex-col justify-between items-center text-center intersect:animate-fade-down animate-once animate-duration-[1500ms]">
        <Heading
         htmlheading="h4"
         size="h4_light"
